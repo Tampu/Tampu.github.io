@@ -1,0 +1,93 @@
+cv:
+  name: Tampu Ravi Kumar
+  label: PhD Student, Computer Engineering
+  email: traviku2@asu.edu
+  location: Tempe, AZ
+  image: ""
+  summary: Multimodal reasoning, evidence attribution and grounding across tables, images, documents and speech; RL post-training for LLMs/VLMs.
+
+  social_networks:
+    - network: GitHub
+      username: Tampu
+    - network: LinkedIn
+      username: tampuravi
+
+  sections:
+    Education:
+      - institution: Arizona State University
+        location: Tempe, AZ
+        url: https://www.asu.edu/
+        area: Computer Engineering (AI/ML and NLP focus)
+        studyType: PhD
+        start_date: 2025-01
+        end_date: present
+        highlights:
+          - Advised by Prof. Vivek Gupta
+
+      - institution: Queen Mary University of London
+        location: London, UK
+        area: Big Data Science
+        studyType: MSc (Distinction)
+        start_date: 2019-09
+        end_date: 2021-09
+
+      - institution: M. S. Ramaiah Institute of Technology
+        location: Bengaluru, India
+        area: Electrical and Electronics Engineering
+        studyType: BE
+        start_date: 2015-08
+        end_date: 2019-08
+
+    Experience:
+      - company: Arizona State University
+        position: Graduate Teaching Assistant
+        location: Tempe, AZ
+        start_date: 2026-05
+        end_date: present
+        highlights:
+          - "CSE 576: Natural Language Processing; CSE 475: Foundations of Machine Learning; CSE 511: Data Processing at Scale"
+
+      - company: CoRAL, Arizona State University
+        position: Graduate Researcher
+        location: Tempe, AZ
+        start_date: 2025-04
+        end_date: present
+        highlights:
+          - Develop LLM/VLM systems for multimodal reasoning and build reasoning-level visual attribution and evidence-verification methods, auditing whether model outputs are genuinely grounded in supporting evidence.
+
+      - company: Phoenix Group
+        position: Data Scientist
+        location: Edinburgh, UK
+        start_date: 2022-01
+        end_date: 2025-01
+        highlights:
+          - Developed a churn prediction model using XGBoost over 4.5M customers, achieving 72% Precision@1000 to support top-1K retention targeting.
+          - Implemented an Azure-based speech analytics workflow for QA (ASR, speaker ID, summarization, sentiment) integrated with customer/policy data, shrinking call handling from 30+ minutes to seconds and enabling faster dissatisfaction triage.
+          - Built K-means based customer segmentation to surface high-likelihood pension consolidation candidates; enabled targeted outreach that drove £1.9M in incremental pension cash flow over a 6-month observation period.
+          - Led the development of an executive-facing Power BI dashboard to quantify office utilization, enabling estate planning decisions that avoided £1.2M+ in planned refurbishment spend.
+
+      - company: imec
+        position: International Scholar
+        location: Leuven, Belgium
+        start_date: 2020-11
+        end_date: 2021-09
+        highlights:
+          - Selected as a KU Leuven International Scholar; developed Python/MATLAB pipelines for ML-based neural spike sorting (PCA, SVD, clustering) to support brain-on-a-chip research.
+
+    Projects:
+      - name: GRPO/RL Post-Training for Grounded Diagram Reasoning
+        start_date: 2026-01
+        end_date: present
+        highlights:
+          - Fine-tuned InternVL3-8B using RL-based post-training (GRPO) on 6 diagram QA datasets, improving reasoning accuracy by +8%.
+
+    Skills:
+      - name: Machine Learning & NLP
+        icon: fa-solid fa-brain
+        keywords: "PyTorch, HuggingFace Transformers, LLMs, VLMs, RLHF/GRPO, RAG, Fine-tuning, PEFT (LoRA)"
+      - name: ML Infrastructure
+        icon: fa-solid fa-server
+        keywords: "vLLM, SLURM, Multi-GPU/H200 Training, Docker, Git"
+      - name: Languages & Data
+        icon: fa-solid fa-code
+        keywords: "Python, SQL, MATLAB, Pandas, NumPy, Scikit-learn, Power BI, Tableau"
