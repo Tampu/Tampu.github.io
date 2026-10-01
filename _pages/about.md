@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD student in Computer Engineering at <a href='https://www.asu.edu/'>Arizona State University</a>
+subtitle: PhD student in Computer Science at <a href='https://www.asu.edu/'>Arizona State University</a>
 
 profile:
   align: right
-  # image: prof_pic.jpg # uncomment after adding assets/img/prof_pic.jpg
+  image: tampu_dp.png # uncomment after adding assets/img/prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>CoRAL Lab, ASU</p>
