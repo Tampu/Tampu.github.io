@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://tampu.github.io/sitemap.xml
