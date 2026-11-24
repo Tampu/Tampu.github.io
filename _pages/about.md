@@ -49,17 +49,35 @@ My research interests lie broadly in **building reliable AI systems**. I am inte
 
 My current research explores **multimodal reasoning, evidence attribution, and grounding** across tables, images, documents, and speech, as well as **reinforcement learning post-training for large language models (LLMs) and vision-language models (VLMs)**. I develop methods to evaluate and improve how models reason over diverse sources of information, connect their answers to supporting evidence, and learn through post-training. More broadly, I am interested in exploring approaches that advance the reasoning, adaptability, and reliability of AI systems.
 
-Before my PhD, I spent three years as a Data Scientist at Phoenix Group in Edinburgh, UK, working on churn prediction, customer segmentation, and speech analytics. I hold an MSc in Big Data Science (Distinction) from [Queen Mary University of London](https://www.qmul.ac.uk/) and a BE in Electrical and Electronics Engineering from M. S. Ramaiah Institute of Technology, Bengaluru. During my MSc, I was also a KU Leuven International Scholar at [imec](https://www.imec-int.com/en), Belgium.
+Before my PhD, I spent 3 years as a Data Scientist at a financial services firm [Standard Life (Phoenix Group)](https://www.standardlifeplc.com) in Edinburgh, UK, working on churn prediction, customer segmentation, and speech analytics. I hold an MSc in Big Data Science (Distinction) from [Queen Mary University of London](https://www.qmul.ac.uk/) and a BE in Electrical and Electronics Engineering from M. S. Ramaiah Institute of Technology, Bengaluru. During my MSc, I was also a KU Leuven International Scholar at [imec](https://www.imec-int.com/en), Belgium.
 
 I am currently a Graduate Teaching Assistant at ASU, supporting CSE 576 (Natural Language Processing).
 
 <div class="avail" role="note" aria-label="Availability">
 <p class="avail-badge"><span class="avail-dot" aria-hidden="true"></span>Open to opportunities</p>
 <p class="avail-when">Summer 2027 Research Internships</p>
-<p class="avail-tags"><span>AI/ML</span><span>LLMs</span><span>Multimodal AI</span><span>RL</span></p>
-<p class="avail-text">Interested in connecting with research teams and industry labs working on reliable and capable AI systems.</p>
+<p class="avail-tags"><span>Multimodal AI</span><span>LLM/VLM Reasoning</span><span>AI Agents</span><span>RL and Post-training</span><span>Reliable AI Systems</span></p>  
+<p class="avail-text">Interested in connecting with research teams and industry labs working on reliable AI systems. Open to exploring challenging research problems beyond my current areas of focus. Particularly excited by opportunities to work on ambitious AI research, learn new directions, and contribute to impactful projects with research teams.</p>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reliable AI Systems
 <section id="service-section" class="service" markdown="1">
 <div class="section-rule" aria-hidden="true"></div>
 
