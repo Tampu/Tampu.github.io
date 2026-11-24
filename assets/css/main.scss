@@ -346,3 +346,41 @@ html[data-theme="dark"] {
   font-size: 0.9rem;
   color: #66703a;
 }
+
+/* About page news: a table that shows about five rows, the rest scroll. */
+.news-box {
+  margin-top: 2rem;
+}
+
+.news-scroll {
+  max-height: 22rem; // replaced by an exact five-row height once the page loads
+  overflow-y: auto;
+  border-top: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+  scrollbar-width: thin;
+  scrollbar-color: var(--global-theme-color) transparent;
+
+  table {
+    width: 100%;
+    margin: 0;
+  }
+
+  thead th {
+    position: sticky;
+    top: 0;
+    background: var(--global-bg-color);
+    z-index: 1;
+  }
+
+  td {
+    padding: 0.55rem 0.5rem;
+    vertical-align: top;
+    border-top: 1px solid var(--global-divider-color);
+  }
+
+  td:first-child {
+    white-space: nowrap;
+    padding-right: 1.2rem;
+    color: var(--global-theme-color);
+  }
+}

@@ -59,6 +59,48 @@ I am currently a Graduate Teaching Assistant at ASU, supporting CSE 576 (Natural
 <p class="avail-tags"><span>Multimodal AI</span><span>LLM/VLM Reasoning</span><span>AI Agents</span><span>RL and Post-training</span><span>Reliable AI Systems</span></p>  
 <p class="avail-text">Interested in connecting with research teams and industry labs working on reliable AI systems. Open to exploring challenging research problems beyond my current areas of focus. Particularly excited by opportunities to work on ambitious AI research, learn new directions, and contribute to impactful projects with research teams.</p>
 </div>
+
+<section id="news-section" class="news-box" markdown="1">
+
+## news
+
+A few milestones, exciting firsts, and memorable moments along my journey so far.
+
+<div class="news-scroll" markdown="1">
+
+| Date | News |
+|---|---|
+| **Dec 10, 2026** | 🎤 Heading to **NeurIPS 2026 in Sydney, Australia**, to present **DRAGON**, our work on evidence-grounded visual reasoning! Looking forward to sharing our research and meeting the community. |
+| **Sep 24, 2026** | 🎉 **DRAGON was accepted at NeurIPS 2026 (Datasets & Benchmarks Track)!** A huge milestone for our team and one of the most exciting moments in my research journey so far. |
+| **Aug 22, 2026** | 🎉 **SentryLine** was accepted to EMNLP 2026 (Demo Track)! My first first-author paper — incredibly excited to see this work make it to EMNLP. |
+| **Aug 21, 2026** | 🎉 Two more papers accepted at EMNLP 2026! **CAPTR** was accepted to the Main Conference and **QUIETT** to Findings. Thrilled to be part of these collaborations! |
+| **Jul 6, 2026** | 🎤 Presented **DIAGRAMS** at ACL 2026! My first-ever research paper, co-first-authored, and my first academic conference poster presentation. A special milestone I'll always remember. |
+| **Apr 24, 2026** | 🎉 **DIAGRAMS** was accepted to ACL 2026 (Demo Track)! My first research paper acceptance and a very special milestone in my PhD journey. |
+| **Jan 13, 2025** | 🎓 Started my PhD in Computer Science at **Arizona State University**. Excited to begin this new chapter in research! |
+| **Sep 27, 2023** | 🏆 Represented **Phoenix Group** at the **2023 DataIQ Awards** — a memorable experience from my industry journey in Edinburgh. |
+| **Jan 20, 2022** | 💼 Started a new chapter as a **Data Scientist at Standard Life (Phoenix Group)** in Edinburgh, UK. |
+| **Nov 1, 2020** | 🔬 Started my research internship at **imec, Belgium**, as a KU Leuven International Scholar, working on machine learning for brain-on-a-chip research. |
+| **Sep 16, 2019** | 🎓 Began my MSc in **Big Data Science at Queen Mary University of London**. A new academic adventure in London! |
+
+</div>
+</section>
+<script>
+  (function () {
+    // Show five news rows at a time; the rest scroll inside the box.
+    function fit() {
+      var box = document.querySelector("#news-section .news-scroll");
+      if (!box) return;
+      var rows = box.querySelectorAll("tr");
+      if (rows.length <= 6) return;
+      var top = box.getBoundingClientRect().top;
+      box.style.maxHeight = Math.ceil(rows[5].getBoundingClientRect().bottom - top + 1) + "px";
+    }
+    document.addEventListener("DOMContentLoaded", fit);
+    window.addEventListener("load", fit);
+    window.addEventListener("resize", fit);
+  })();
+</script>
+
 <section id="service-section" class="service" markdown="1">
 <div class="section-rule" aria-hidden="true"></div>
 
