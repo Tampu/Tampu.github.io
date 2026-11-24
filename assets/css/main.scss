@@ -170,7 +170,7 @@ html[data-theme="dark"] {
   background: linear-gradient(90deg, transparent, var(--global-divider-color) 12%, var(--global-divider-color) 88%, transparent);
 }
 
-/* Navbar: the TRK + coo mark replaces the name in the top-left corner and links to the intro.
+/* Navbar: the TRK mark replaces the name in the top-left corner and links to the intro.
    The name stays in the link for screen readers; it is only hidden visually. */
 .navbar-brand.title {
   display: inline-block;
@@ -180,7 +180,7 @@ html[data-theme="dark"] {
   margin-right: 1rem;
   font-size: 0 !important;
   color: transparent !important;
-  background: url("/assets/img/trk-icon.png") center / contain no-repeat;
+  background: url("/assets/img/trk-mark.png") center / contain no-repeat;
   border-radius: 10px;
   transition: transform 0.2s ease;
 

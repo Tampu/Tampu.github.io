@@ -55,11 +55,12 @@ I am currently a Graduate Teaching Assistant at ASU, supporting CSE 576 (Natural
 
 <div class="avail" role="note" aria-label="Availability">
 <p class="avail-badge"><span class="avail-dot" aria-hidden="true"></span>Open to opportunities</p>
-<p class="avail-when">Summer 2027 research internships</p>
+<p class="avail-when">Summer 2027 Research Internships</p>
 <p class="avail-tags"><span>AI/ML</span><span>LLMs</span><span>Multimodal AI</span><span>RL</span></p>
 <p class="avail-text">Interested in connecting with research teams and industry labs working on reliable and capable AI systems.</p>
 </div>
 
+<section id="service" class="service" markdown="1">
 <div class="section-rule" aria-hidden="true"></div>
 
 ## service
@@ -67,7 +68,7 @@ I am currently a Graduate Teaching Assistant at ASU, supporting CSE 576 (Natural
 - **Program committee**: [SURGeLLM Workshop](https://surgellm.github.io/acl2026/) (ACL 2026), [GRAIL-V Workshop](https://grailworkshops.github.io) (CVPR 2026), [DocInsights Workshop](https://docinsights-workshop.github.io/docinsights-2026/) (EMNLP 2026)
 - **Reviewer**: EMNLP 2026 (Demo Track), NeurIPS 2026 workshops
 
-<div class="section-rule" aria-hidden="true"></div>
+</section>
 
 <section id="get-in-touch" class="git" aria-labelledby="git-title">
 <div class="section-rule" aria-hidden="true"></div>
@@ -77,20 +78,25 @@ I am currently a Graduate Teaching Assistant at ASU, supporting CSE 576 (Natural
 <h2 id="git-title" class="git-title">Get in touch</h2>
 <p class="git-lead">Interested in research collaborations, exchanging ideas, discussing opportunities, or just saying hello? I'd love to hear from you.</p>
 <a class="git-email" href="mailto:traviku2@asu.edu">traviku2@asu.edu</a>
-<p class="git-avail"><span class="avail-dot" aria-hidden="true"></span>Open to Summer 2027 research internships</p>
+<p class="git-avail"><span class="avail-dot" aria-hidden="true"></span>Open to Summer 2027 Research Internships</p>
 <p class="git-links"><a href="https://scholar.google.com/citations?user=FarftTMAAAAJ">Google Scholar</a><span aria-hidden="true">·</span><a href="https://www.linkedin.com/in/tampuravi">LinkedIn</a><span aria-hidden="true">·</span><a href="https://github.com/Tampu">GitHub</a><span aria-hidden="true">·</span><a href="{{ '/cv/' | relative_url }}">CV</a></p>
 <p class="git-sign">A good conversation can start anywhere.</p>
 </div>
 </section>
 <script>
   (function () {
-    // Move the section to the end of the about page: after the selected publications, before the social icons.
-    var section = document.getElementById("get-in-touch");
-    var article = section && section.closest("article");
+    // Page order: bio, availability, selected publications, service, get in touch, social icons.
+    // The layout renders publications after this content, so move service and get in touch below them.
+    var service = document.getElementById("service");
+    var contact = document.getElementById("get-in-touch");
+    var article = contact && contact.closest("article");
     if (!article) return;
     var social = article.querySelector(".social");
-    if (social) article.insertBefore(section, social); // social icons stay at the very bottom
-    else article.appendChild(section);
+    [service, contact].forEach(function (el) {
+      if (!el) return;
+      if (social) article.insertBefore(el, social);
+      else article.appendChild(el);
+    });
   })();
 </script>
 
