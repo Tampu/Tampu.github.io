@@ -10,9 +10,7 @@ profile:
   align: right
   image: tampu_dp.png # uncomment after adding assets/img/prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>CoRAL Lab, ASU</p>
-    <p>Tempe, AZ</p>
+ 
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
