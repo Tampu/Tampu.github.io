@@ -114,9 +114,9 @@ cv:
 
     Academic Service:
       - label: Program Committee
-        details: SURGeLLM Workshop (ACL 2026), GRAIL-V Workshop (CVPR 2026), DocuInsights Workshop (EMNLP)
+        details: SURGeLLM Workshop (ACL 2026), GRAIL-V Workshop (CVPR 2026), DocInsights Workshop (EMNLP 2026)
       - label: Reviewer
-        details: EMNLP 2026 (Demo Track), NeurIPS workshops
+        details: EMNLP 2026 (Demo Track), NeurIPS 2026 workshops
 
     Skills:
       - name: Machine Learning & NLP
