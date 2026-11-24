@@ -7,6 +7,22 @@
 (function () {
   "use strict";
   if (window.__wordSnake) return;
+  var selfSrc = document.currentScript ? document.currentScript.src : "/assets/js/word-snake.js";
+  // Desktop only: skip phones and tablets (narrow screens or touch-only pointers).
+  var mobileQuery = window.matchMedia("(max-width: 768px), (hover: none) and (pointer: coarse)");
+  if (mobileQuery.matches) {
+    // A desktop window that starts narrow gets the snake once it is widened.
+    var later = function () {
+      if (!mobileQuery.matches) {
+        mobileQuery.removeEventListener("change", later);
+        var sc = document.createElement("script");
+        sc.src = selfSrc;
+        document.body.appendChild(sc);
+      }
+    };
+    if (mobileQuery.addEventListener) mobileQuery.addEventListener("change", later);
+    return;
+  }
   window.__wordSnake = true;
 
   var DEFAULT_WORDS = "GROUNDING EVIDENCE ATTRIBUTION REASONING MULTIMODAL GRPO BENCHMARK FORECASTING RETRIEVAL ROBUSTNESS".split(" ");
@@ -41,6 +57,12 @@
   canvas.setAttribute("aria-hidden", "true");
   canvas.style.cssText = "position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:-1;pointer-events:none;";
   document.body.insertBefore(canvas, document.body.firstChild);
+  // Shrinking the window to phone size hides the snake again; widening brings it back.
+  if (mobileQuery.addEventListener) {
+    mobileQuery.addEventListener("change", function () {
+      canvas.style.display = mobileQuery.matches ? "none" : "";
+    });
+  }
   var ctx = canvas.getContext("2d");
   var dotLayer = document.createElement("canvas");
 
