@@ -59,25 +59,6 @@ I am currently a Graduate Teaching Assistant at ASU, supporting CSE 576 (Natural
 <p class="avail-tags"><span>Multimodal AI</span><span>LLM/VLM Reasoning</span><span>AI Agents</span><span>RL and Post-training</span><span>Reliable AI Systems</span></p>  
 <p class="avail-text">Interested in connecting with research teams and industry labs working on reliable AI systems. Open to exploring challenging research problems beyond my current areas of focus. Particularly excited by opportunities to work on ambitious AI research, learn new directions, and contribute to impactful projects with research teams.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Reliable AI Systems
 <section id="service-section" class="service" markdown="1">
 <div class="section-rule" aria-hidden="true"></div>
 
