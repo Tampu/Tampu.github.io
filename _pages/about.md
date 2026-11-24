@@ -15,7 +15,7 @@ profile:
     <p>Tempe, AZ</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false # contact links live in the "Get in touch" section instead
+social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
@@ -53,6 +53,13 @@ Before my PhD, I spent three years as a Data Scientist at Phoenix Group in Edinb
 
 I am currently a Graduate Teaching Assistant at ASU, supporting CSE 576 (Natural Language Processing).
 
+<div class="avail" role="note" aria-label="Availability">
+<p class="avail-badge"><span class="avail-dot" aria-hidden="true"></span>Open to opportunities</p>
+<p class="avail-when">Summer 2027 research internships</p>
+<p class="avail-tags"><span>AI/ML</span><span>LLMs</span><span>Multimodal AI</span><span>RL</span></p>
+<p class="avail-text">Interested in connecting with research teams and industry labs working on reliable and capable AI systems.</p>
+</div>
+
 <div class="section-rule" aria-hidden="true"></div>
 
 ## service
@@ -70,16 +77,20 @@ I am currently a Graduate Teaching Assistant at ASU, supporting CSE 576 (Natural
 <h2 id="git-title" class="git-title">Get in touch</h2>
 <p class="git-lead">Interested in research collaborations, exchanging ideas, discussing opportunities, or just saying hello? I'd love to hear from you.</p>
 <a class="git-email" href="mailto:traviku2@asu.edu">traviku2@asu.edu</a>
+<p class="git-avail"><span class="avail-dot" aria-hidden="true"></span>Open to Summer 2027 research internships</p>
 <p class="git-links"><a href="https://scholar.google.com/citations?user=FarftTMAAAAJ">Google Scholar</a><span aria-hidden="true">·</span><a href="https://www.linkedin.com/in/tampuravi">LinkedIn</a><span aria-hidden="true">·</span><a href="https://github.com/Tampu">GitHub</a><span aria-hidden="true">·</span><a href="{{ '/cv/' | relative_url }}">CV</a></p>
 <p class="git-sign">A good conversation can start anywhere.</p>
 </div>
 </section>
 <script>
   (function () {
-    // Move the section to the very end of the about page, after the selected publications.
+    // Move the section to the end of the about page: after the selected publications, before the social icons.
     var section = document.getElementById("get-in-touch");
     var article = section && section.closest("article");
-    if (article) article.appendChild(section);
+    if (!article) return;
+    var social = article.querySelector(".social");
+    if (social) article.insertBefore(section, social); // social icons stay at the very bottom
+    else article.appendChild(section);
   })();
 </script>
 
