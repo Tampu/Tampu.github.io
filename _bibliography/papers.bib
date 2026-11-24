@@ -27,9 +27,9 @@
 }
 
 @inproceedings{ravikumar2026sentryline,
+  html          = {https://aclanthology.org/2026.emnlp-demos.85/},
   preview       = {sentryline.jpg},
   abstract      = {Oncology care operates at constant pressure of absorbing rapidly evolving evidence base in biomedicine. The American Society of Clinical Oncology (ASCO) addresses this through living guidelines, but the format introduces a new burden: any recommendation can change at any point, across multiple versioned documents. We present SENTRYLINE, a living guideline-aware clinical question answering system. SENTRYLINE retrieves guideline passages through a vectorless hierarchical RAG pipeline and returns a role-specific answer with inline citations, factual and temporal verification reports, and drift detection notes that surface when a guideline has been updated. We construct ASCOBENCH, a benchmark of 405 three-turn conversations across four question categories with gold answers from expert annotators(clinicians), and use test set to evaluate SENTRYLINE against five baselines under an LLM-as-judge framework. Experiments across three generation backbones show consistent improvements over four retrieval baselines and ASCO's guideline assistant, with particularly strong gains on Reasoning and Role-Specific questions where multi-hop synthesis and register adaptation are required},
-  arxiv         = {2609.08364},
   abbr          = {EMNLP},
   title         = {SentryLine: Evidence-Grounded QA over Evolving Documents in Oncology Care},
   author        = {Ravi Kumar, Tampu and Najpande, Gaurav and Khan, Muhammad Ali and Khakwani, Kaneez Zahra Rubab and Kathuria, Karan and Moses, Shorya Azriel and Kalia, Yuvraj and Sonbol, M Bassam and Riaz, Irbaz Bin and Gupta, Vivek},
@@ -39,18 +39,21 @@
 }
 
 @inproceedings{najpande2026quiett,
+  html          = {https://aclanthology.org/2026.findings-emnlp.1717/},
   preview       = {quiett.jpg},
   abstract      = {Real-world tables often contain schema inconsistencies, heterogeneous value formats, and implicit relational structures that degrade table reasoning and question answering. Existing approaches address these issues at query time, repeating normalization and restructuring for every new question and producing representations that do not generalize to unseen queries. We introduce QuIeTT, a transform-first, query-later framework that converts each raw table into a single SQL-ready canonical representation before any evaluation query is observed, under three constraints: no evaluation query access, information preservation, and single-table reuse. QuIeTT operates through a three-stage pipeline: issue probing, where synthetic queries surface structural deficiencies such as ambiguous schemas and heterogeneous formats; plan generation; and structured execution. Experiments on four benchmarks across five model families show consistent improvements over strong baselines in both direct prompting and agentic reasoning paradigms, with particularly strong gains on a manually annotated challenge set of structurally diverse unseen questions.},
-  arxiv         = {2602.20017},
   abbr          = {EMNLP},
   title         = {QUIETT: Query-Independent Table Transformation for Robust Reasoning},
   author        = {Najpande, Gaurav and Ravi Kumar*, Tampu and Roy Choudhury*, Manan and Valeti*, Neha and Fu, Yanjie and Gupta, Vivek},
-  booktitle     = {Proceedings of EMNLP},
+  booktitle     = {Findings of EMNLP},
   year          = {2026},
   annotation    = {* Equal contribution}
 }
 
 @inproceedings{titiya2026captr,
+  html          = {https://aclanthology.org/2026.emnlp-main.826/},
+  preview       = {captr.jpg},
+  abstract      = {Multimodal Large Language Models struggle with tabular reasoning on tables containing images as cells owing to their limited memory and the distractions posed by the surrounding irrelevant visual elements. Existing context-reduction methods reduce context size but degrade reasoning accuracy: text-only pruning neglects visual cells, token-level pruning discards valuable information, and retrieval cannot understand table structure. We propose CAPTR: Caption-based Context Pruning for Tabular Reasoning, a two-stage framework that uses image captions as a lightweight textual proxy to prune non-pertinent rows and columns and then restores images for reasoning. CAPTR can reduce the context length by 80\% while achieving up to 8\% accuracy improvement against competitive baselines. By analyzing the error cases, we find that entity confusion contributes to the majority of the remaining errors. CAPTR is the first multimodal context-reduction method to improve performance on multimodal tabular reasoning.},
   abbr          = {EMNLP},
   title         = {CAPTR: Caption-based Context Pruning for Multimodal Tabular Reasoning},
   author        = {Titiya, Prasham and Engländer*, Leon and Najpande*, Gaurav and Ravi Kumar*, Tampu and Gurevych, Iryna and Gupta, Vivek},
@@ -62,7 +65,6 @@
 @inproceedings{iyengar2026diagrams,
   preview       = {diagrams.jpg},
   abstract      = {Diagram question answering (Diagram QA) requires reasoning-level attribution that links each question-answer pair to all visual regions needed to derive the answer, rather than only the region containing the final response. Creating such structured evidence across diagrams, charts, maps, circuits, and infographics is time-consuming, and existing annotation tools tightly couple their interfaces to dataset-specific formats. We present DIAGRAMS, a lightweight, schema-driven review framework that decouples interface logic from dataset-specific JSON structures through an internal meta-schema and dataset adapters. Given an image and QA pair with optional candidate regions, the system performs QA-conditioned evidence selection and proposes the regions required for reasoning. When QA pairs or candidate regions are missing, it generates them and supports human verification and refinement. Across six Diagram QA datasets, model-suggested evidence achieves 85.39\% precision and 75.30\% recall against reviewer-final selections (micro-averaged). These results indicate that the review-first framework reduces manual region creation while maintaining high agreement with final reasoning-level attributions. We release a public demo and installable package to support dataset auditing, grounded supervision creation, and grounded evaluation.},
-  arxiv         = {2605.00905},
   html          = {https://aclanthology.org/2026.acl-demo.76/},
   code          = {https://github.com/CoRAL-ASU/diagrams},
   abbr          = {ACL},
