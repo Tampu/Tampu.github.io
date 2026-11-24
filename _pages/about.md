@@ -60,7 +60,7 @@ I am currently a Graduate Teaching Assistant at ASU, supporting CSE 576 (Natural
 <p class="avail-text">Interested in connecting with research teams and industry labs working on reliable and capable AI systems.</p>
 </div>
 
-<section id="service" class="service" markdown="1">
+<section id="service-section" class="service" markdown="1">
 <div class="section-rule" aria-hidden="true"></div>
 
 ## service
@@ -87,7 +87,7 @@ I am currently a Graduate Teaching Assistant at ASU, supporting CSE 576 (Natural
   (function () {
     // Page order: bio, availability, selected publications, service, get in touch, social icons.
     // The layout renders publications after this content, so move service and get in touch below them.
-    var service = document.getElementById("service");
+    var service = document.getElementById("service-section");
     var contact = document.getElementById("get-in-touch");
     var article = contact && contact.closest("article");
     if (!article) return;
