@@ -53,5 +53,10 @@ Before my PhD, I spent three years as a Data Scientist at Phoenix Group in Edinb
 
 I am currently a Graduate Teaching Assistant at ASU, supporting CSE 576 (Natural Language Processing).
 
+## service
+
+- **Program committee**: SURGeLLM Workshop (ACL 2026), GRAIL-V Workshop (CVPR 2026), DocuInsights Workshop (EMNLP)
+- **Reviewer**: EMNLP 2026 (Demo Track), NeurIPS workshops
+
 <script>window.SNAKE_WORDS = {{ site.data.snake_words | jsonify }};</script>
 <script src="{{ '/assets/js/word-snake.js' | relative_url }}" defer></script>

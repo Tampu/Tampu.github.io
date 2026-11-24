@@ -72,55 +72,55 @@ html[data-theme="dark"] {
 }
 
 /*******************************************************************************
- * Publications in the same palette: cards, figure thumbnails, open abstracts.
+ * Publications in the same palette: plain list (no boxes), figure thumbnails
+ * above the venue badge, outlined link buttons, and open abstracts.
  * .pubs-full is set on the publications page only (_pages/publications.md);
- * the about page's "selected publications" keeps its compact form.
+ * the about page's "selected publications" keeps its abstracts folded.
  ******************************************************************************/
 .publications h2.bibliography {
   color: var(--global-theme-color);
   font-weight: 300;
 }
 
-.publications ol.bibliography li {
-  background: var(--global-card-bg-color);
-  border: 1px solid rgba(184, 112, 29, 0.18);
-  border-radius: 14px;
-  padding: 1.1rem 1.25rem;
-  margin-bottom: 1.1rem;
-  box-shadow:
-    0 1px 2px rgba(46, 34, 22, 0.04),
-    0 6px 18px rgba(46, 34, 22, 0.05);
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
+// Thumbnail above the venue badge.
+.publications ol.bibliography li .row > .abbr {
+  display: flex;
+  flex-direction: column;
 
-  &:hover {
-    border-color: rgba(184, 112, 29, 0.45);
-    box-shadow: 0 10px 26px rgba(46, 34, 22, 0.09);
+  > figure,
+  > picture,
+  > img.preview {
+    order: -1;
   }
+}
+
+.publications ol.bibliography li {
+  margin-bottom: 2rem;
 
   .title {
-    font-weight: 600;
+    font-weight: 500;
     color: var(--global-text-color);
   }
 
   .preview {
     width: 100%;
-    margin-top: 0.35rem;
-    border-radius: 8px;
+    margin-bottom: 0.6rem;
+    border-radius: 6px;
     border: 1px solid var(--global-divider-color);
     background: #fff;
     box-shadow: none !important;
   }
 
   .links a.btn {
-    border: 1px solid var(--global-theme-color);
-    border-radius: 999px;
-    color: var(--global-theme-color);
+    border: 1px solid var(--global-text-color);
+    border-radius: 3px;
+    color: var(--global-text-color);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 
     &:hover {
-      background: var(--global-theme-color);
-      color: var(--global-hover-text-color);
+      border-color: var(--global-theme-color);
+      color: var(--global-theme-color);
     }
   }
 }

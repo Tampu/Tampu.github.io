@@ -113,10 +113,10 @@ cv:
         summary: "Tampu Ravi Kumar, Ayoub Daliri, Vivek Gupta."
 
     Academic Service:
-      - label: Reviewer
-        details: EMNLP 2026 (Demo Track)
       - label: Program Committee
-        details: SURGeLLM (ACL 2026) & GRAIL-V (CVPR 2026) Workshops
+        details: SURGeLLM Workshop (ACL 2026), GRAIL-V Workshop (CVPR 2026), DocuInsights Workshop (EMNLP)
+      - label: Reviewer
+        details: EMNLP 2026 (Demo Track), NeurIPS workshops
 
     Skills:
       - name: Machine Learning & NLP
