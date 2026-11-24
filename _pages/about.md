@@ -96,8 +96,7 @@ Reliable AI Systems
 <h2 id="git-title" class="git-title">Get in touch</h2>
 <p class="git-lead">Interested in research collaborations, exchanging ideas, discussing opportunities, or just saying hello? I'd love to hear from you.</p>
 <a class="git-email" href="mailto:traviku2@asu.edu">traviku2@asu.edu</a>
-<p class="git-avail"><span class="avail-dot" aria-hidden="true"></span>Open to Summer 2027 Research Internships</p>
-<p class="git-links"><a href="https://scholar.google.com/citations?user=FarftTMAAAAJ">Google Scholar</a><span aria-hidden="true">·</span><a href="https://www.linkedin.com/in/tampuravi">LinkedIn</a><span aria-hidden="true">·</span><a href="https://github.com/Tampu">GitHub</a><span aria-hidden="true">·</span><a href="{{ '/cv/' | relative_url }}">CV</a></p>
+
 <p class="git-sign">A good conversation can start anywhere.</p>
 </div>
 </section>
