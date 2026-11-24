@@ -15,7 +15,7 @@ profile:
     <p>Tempe, AZ</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # contact links live in the "Get in touch" section instead
 
 announcements:
   enabled: false # includes a list of news items
@@ -64,53 +64,22 @@ I am currently a Graduate Teaching Assistant at ASU, supporting CSE 576 (Natural
 
 <section id="get-in-touch" class="git" aria-labelledby="git-title">
 <div class="section-rule" aria-hidden="true"></div>
-<div class="git-grid">
-<form class="git-form" data-endpoint="" data-email="traviku2@asu.edu" novalidate>
-<h2 id="git-title" class="git-title">get in touch</h2>
-<div class="git-row">
-<label>First name <span>(required)</span><input name="first_name" autocomplete="given-name" required></label>
-<label>Last name <span>(required)</span><input name="last_name" autocomplete="family-name" required></label>
-</div>
-<label>Email <span>(required)</span><input name="email" type="email" autocomplete="email" required></label>
-<label>Subject <span>(required)</span><input name="subject" required></label>
-<label>Message <span>(required)</span><textarea name="message" rows="5" required></textarea></label>
-<input type="text" name="_gotcha" class="git-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-<div class="git-actions"><button type="submit">Send</button><p class="git-status" role="status" aria-live="polite"></p></div>
-</form>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap">
+<div class="git-inner">
+<img class="git-coo" src="{{ '/assets/img/coo-mail.webp' | relative_url }}" width="818" height="414" alt="My Highland coo mascot holding an envelope" loading="lazy">
+<h2 id="git-title" class="git-title">Get in touch</h2>
+<p class="git-lead">Interested in research collaborations, exchanging ideas, discussing opportunities, or just saying hello? I'd love to hear from you.</p>
+<a class="git-email" href="mailto:traviku2@asu.edu">traviku2@asu.edu</a>
+<p class="git-links"><a href="https://scholar.google.com/citations?user=FarftTMAAAAJ">Google Scholar</a><span aria-hidden="true">·</span><a href="https://www.linkedin.com/in/tampuravi">LinkedIn</a><span aria-hidden="true">·</span><a href="https://github.com/Tampu">GitHub</a><span aria-hidden="true">·</span><a href="{{ '/cv/' | relative_url }}">CV</a></p>
+<p class="git-sign">A good conversation can start anywhere.</p>
 </div>
 </section>
 <script>
   (function () {
+    // Move the section to the very end of the about page, after the selected publications.
     var section = document.getElementById("get-in-touch");
-    if (!section) return;
-    // Move the section to the very end of the about page, after the selected publications and social icons.
-    var article = section.closest("article");
+    var article = section && section.closest("article");
     if (article) article.appendChild(section);
-    var form = section.querySelector("form");
-    var status = form.querySelector(".git-status");
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      if (!form.checkValidity()) { form.reportValidity(); return; }
-      var d = new FormData(form);
-      if (d.get("_gotcha")) return; // bots fill the hidden field
-      var endpoint = form.getAttribute("data-endpoint");
-      if (endpoint) {
-        // A form service (e.g. Formspree) delivers the message by email.
-        status.textContent = "Sending...";
-        fetch(endpoint, { method: "POST", body: d, headers: { Accept: "application/json" } })
-          .then(function (r) {
-            if (!r.ok) throw new Error();
-            form.reset();
-            status.textContent = "Thanks! Your message is on its way.";
-          })
-          .catch(function () { status.textContent = "Sorry, that didn't send. Please email me instead."; });
-        return;
-      }
-      // No form service set up yet: open the visitor's email app with everything filled in.
-      var body = d.get("message") + "\n\n- " + d.get("first_name") + " " + d.get("last_name") + " (" + d.get("email") + ")";
-      location.href = "mailto:" + form.getAttribute("data-email") + "?subject=" + encodeURIComponent(d.get("subject")) + "&body=" + encodeURIComponent(body);
-      status.textContent = "Opening your email app...";
-    });
   })();
 </script>
 
