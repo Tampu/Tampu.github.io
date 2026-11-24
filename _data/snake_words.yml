@@ -1,0 +1,203 @@
+# Words the snake on the about page collects. Hovering a word on the page shows its tip.
+# Keep words short (11 letters or fewer fit the side margins best); letters, digits and '-' only.
+
+# My research
+- word: DRAGON
+  tip: "Benchmark for evidence-grounded visual reasoning over diagrams (NeurIPS 2026)"
+- word: SENTRYLINE
+  tip: "QA over evolving oncology guidelines that tracks stale evidence (EMNLP 2026 Demo)"
+- word: DIAGRAMS
+  tip: "Review framework for reasoning-level attribution in diagram QA (ACL 2026 Demo)"
+- word: QUIETT
+  tip: "Query-independent table transformation for robust reasoning (EMNLP 2026 Findings)"
+- word: CAPTR
+  tip: "Caption-based context pruning for multimodal table reasoning (EMNLP 2026)"
+- word: ASCOBENCH
+  tip: "405 clinician-annotated oncology conversations; SentryLine wins all 4 question types"
+- word: CORAL
+  tip: "My lab at Arizona State University, advised by Prof. Vivek Gupta"
+
+
+# Grounding and attribution
+- word: EVIDENCE
+  tip: "An answer should point to the evidence that supports it"
+- word: ATTRIBUTION
+  tip: "Tracing an answer back to the exact sources it relied on"
+- word: GROUNDING
+  tip: "Linking a model's answer to regions of an image, table or document"
+- word: PROVENANCE
+  tip: "Knowing where each piece of evidence came from"
+- word: FAITHFULNESS
+  tip: "Explanations that reflect what the model actually used"
+- word: HALLUCINATION
+  tip: "Claims a model makes without support, what grounding guards against"
+- word: VERIFIER
+  tip: "A model that checks whether an answer is really supported"
+- word: STALENESS
+  tip: "Spotting evidence that a newer guideline has superseded"
+- word: IOU
+  tip: "Intersection over union: how well a predicted evidence box matches the gold one"
+- word: ANNOTATION
+  tip: "Region-level evidence labels: DRAGON has 11,664 annotated QA instances"
+
+# Reasoning across modalities
+- word: REASONING
+  tip: "Multi-step inference over diagrams, tables, documents and speech"
+- word: MULTIMODAL
+  tip: "Models that read images, text, tables and audio together"
+- word: DIAGRAM-QA
+  tip: "Answering questions about charts, maps, circuits and infographics"
+- word: TABLE-QA
+  tip: "Question answering over structured and semi-structured tables"
+- word: VQA
+  tip: "Visual question answering: questions about images"
+- word: CAPTIONS
+  tip: "Short descriptions used to decide which table context to keep (CAPTR)"
+- word: PRUNING
+  tip: "Dropping irrelevant context before the model reasons over it"
+- word: ROBUSTNESS
+  tip: "Reasoning that holds up when inputs are reordered or perturbed"
+- word: ONCOLOGY
+  tip: "Cancer care, the clinical domain of SentryLine"
+- word: GUIDELINES
+  tip: "Clinical guidelines that change over time, so evidence goes stale"
+
+# Speech and forecasting
+- word: STUTTERING
+  tip: "Speech disfluency; my ICASSP work forecasts when it will start"
+- word: FORECASTING
+  tip: "Predicting an event before it happens, not just detecting it"
+- word: ANTICIPATION
+  tip: "Warning before a stutter begins: 58.6% of events at a 25% alarm duty cycle"
+- word: ONSET
+  tip: "The moment a stuttering event starts; 2,872 onset-aligned events"
+- word: CAUSAL
+  tip: "Models that only see the past, so they can run live"
+- word: CONFORMER
+  tip: "Convolution-augmented Transformer used for causal onset forecasting"
+- word: WHISPER
+  tip: "Speech encoder whose features feed the onset forecaster"
+- word: SPEECH
+  tip: "Audio as a modality: from call analytics to stuttering"
+- word: ASR
+  tip: "Automatic speech recognition, used in call analytics at Phoenix Group"
+- word: SPEAKER-ID
+  tip: "Telling who is speaking in a recorded call"
+- word: SENTIMENT
+  tip: "Detecting customer dissatisfaction from calls"
+- word: SUMMARIZATION
+  tip: "Turning 30+ minute calls into summaries read in seconds"
+
+# Post-training and RL
+- word: GRPO
+  tip: "Group Relative Policy Optimization: the RL method I use for grounding"
+- word: RLHF
+  tip: "Reinforcement learning from human feedback"
+- word: REWARD
+  tip: "Grounding-aware rewards that score where the model looks, not just what it says"
+- word: POLICY
+  tip: "The model being optimized during RL"
+- word: ROLLOUT
+  tip: "Answers the policy samples during RL training"
+- word: KL
+  tip: "The penalty that keeps an RL policy close to its starting model"
+- word: POST-TRAIN
+  tip: "Improving a pretrained model with SFT and RL"
+- word: SFT
+  tip: "Supervised fine-tuning, the warm start before GRPO"
+- word: LORA
+  tip: "Low-rank adapters for parameter-efficient fine-tuning"
+- word: PEFT
+  tip: "Parameter-efficient fine-tuning"
+- word: FINE-TUNING
+  tip: "Adapting a pretrained model to a task with labeled examples"
+- word: ADAPTATION
+  tip: "Moving large models to new domains and tasks"
+
+# Models
+- word: VLM
+  tip: "Vision-language model"
+- word: LLM
+  tip: "Large language model"
+- word: TRANSFORMER
+  tip: "The architecture behind today's language and vision models"
+- word: ATTENTION
+  tip: "How a Transformer decides which tokens to look at"
+- word: EMBEDDINGS
+  tip: "Vectors that place similar meanings close together"
+- word: RAG
+  tip: "Retrieval-augmented generation: fetch evidence, then answer"
+- word: RETRIEVAL
+  tip: "Finding the right evidence before answering"
+- word: PROMPTING
+  tip: "Steering a model with instructions and examples"
+- word: ALIGNMENT
+  tip: "Making model behavior match what people intend"
+- word: NLP
+  tip: "Natural language processing; I also TA CSE 576 (NLP)"
+
+# Data science
+- word: CHURN
+  tip: "XGBoost churn model over 4.5M customers at Phoenix Group"
+- word: XGBOOST
+  tip: "Gradient-boosted trees, used for churn prediction"
+- word: SEGMENTATION
+  tip: "K-means segments behind £1.9M in incremental pension cash flow"
+- word: K-MEANS
+  tip: "Clustering for customer segments and for spike sorting"
+- word: CLUSTERING
+  tip: "Grouping similar points without labels"
+- word: FINANCIAL-SERVICES
+  tip: "I worked on Pension products at Phoenix Group, Edinburgh"
+- word: DECISIONING
+  tip: "Turning model scores into targeted outreach"
+- word: AZURE
+  tip: "Cloud platform behind the speech analytics workflow"
+- word: SPIKES
+  tip: "Neural spike sorting for brain-on-a-chip research at imec"
+- word: BRAIN-ON-CHIP
+  tip: "imec research recording neurons on a chip (KU Leuven scholar)"
+- word: PCA
+  tip: "Principal component analysis, used in spike sorting"
+- word: SVD
+  tip: "Singular value decomposition"
+- word: TEACHING
+  tip: "Graduate Teaching Assistant at ASU for CSE 576 (NLP)"
+
+# Systems and tools
+- word: PYTORCH
+  tip: "Deep learning framework I train models in"
+- word: HUGGINGFACE
+  tip: "Transformers library and model hub"
+- word: VLLM
+  tip: "Fast LLM inference engine, used to generate RL rollouts"
+- word: SLURM
+  tip: "Cluster scheduler for multi-GPU training jobs"
+- word: H200
+  tip: "GPUs I train on"
+- word: MULTI-GPU
+  tip: "Training across many GPUs at once"
+- word: DOCKER
+  tip: "Containers for reproducible environments"
+- word: GIT
+  tip: "Version control for code and experiments"
+- word: PYTHON
+  tip: "My main programming language"
+- word: SQL
+  tip: "Querying data where it lives"
+- word: MATLAB
+  tip: "Numerical computing, used in signal processing"
+- word: PANDAS
+  tip: "Dataframes for data wrangling"
+- word: NUMPY
+  tip: "Arrays and numerical computing in Python"
+- word: SCIKIT-LEARN
+  tip: "Classical machine learning in Python"
+- word: POWER-BI
+  tip: "Business dashboards"
+- word: TABLEAU
+  tip: "Data visualization"
+- word: PIPELINES
+  tip: "Data and ML pipelines from raw data to decisions"
+- word: SCALABILITY
+  tip: "Systems that keep working at millions of customers and many GPUs"
