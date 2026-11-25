@@ -645,4 +645,12 @@
   .fn-sec-head .fn-hand {
     display: none;
   }
+  .fn-lens {
+    columns: 2;
+    column-gap: 0.8rem;
+  }
+  .fn-lens .fn-print .ph svg {
+    width: 26px;
+    height: 26px;
+  }
 }
