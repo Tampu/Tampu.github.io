@@ -654,3 +654,268 @@
     height: 26px;
   }
 }
+
+/* ---------- header additions ---------- */
+.fn-head .lead2 {
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  margin: 0 0 0.9rem;
+}
+.fn-head .fn-thread {
+  margin-top: 1rem;
+  transform: rotate(-1deg);
+  font-size: 1.3rem;
+}
+.fn .status {
+  display: inline-block;
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  border-radius: 999px;
+  padding: 0.05rem 0.6rem;
+  margin-right: 0.5rem;
+}
+.fn-thoughts .tags .status + span::before {
+  content: "";
+}
+
+/* ---------- the bigger questions: a night-sky band ---------- */
+body {
+  overflow-x: hidden;
+}
+.fn-cosmos {
+  --ink: #ece6d6;
+  --muted: #9ba5bb;
+  --rule: rgba(236, 230, 214, 0.14);
+  --gold: #e2b45f;
+  --paper: #0f1626;
+  position: relative;
+  width: 100vw;
+  margin: 3.5rem 0 1rem calc(50% - 50vw);
+  padding: 4.2rem 0 3.6rem;
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse at 78% 0%, rgba(70, 92, 150, 0.35), transparent 55%),
+    radial-gradient(ellipse at 10% 100%, rgba(120, 90, 60, 0.18), transparent 50%),
+    #0f1626;
+  overflow: hidden;
+  isolation: isolate;
+}
+.fn-cosmos::before,
+.fn-cosmos::after {
+  content: "";
+  position: absolute;
+  inset: -40px;
+  z-index: -1;
+  background-image:
+    radial-gradient(1px 1px at 20px 30px, #fff, transparent),
+    radial-gradient(1px 1px at 120px 80px, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(1.5px 1.5px at 60px 150px, rgba(255, 240, 210, 0.9), transparent),
+    radial-gradient(1px 1px at 180px 190px, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1px 1px at 230px 40px, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(1px 1px at 280px 120px, rgba(255, 255, 255, 0.5), transparent);
+  background-size: 300px 220px;
+  opacity: 0.75;
+  animation: fn-drift 140s linear infinite;
+}
+.fn-cosmos::after {
+  background-size: 470px 380px;
+  opacity: 0.45;
+  animation-duration: 220s;
+}
+@keyframes fn-drift {
+  to {
+    transform: translate(-300px, 60px);
+  }
+}
+.fn-cosmos-inner {
+  position: relative;
+  width: min(900px, 100% - 30px);
+  margin: 0 auto;
+}
+.fn-cosmos .orbits {
+  position: absolute;
+  right: -170px;
+  top: -110px;
+  width: 520px;
+  height: 520px;
+  z-index: -1;
+  opacity: 0.4;
+  animation: fn-spin 240s linear infinite;
+}
+.fn-cosmos .orbits circle {
+  stroke: rgba(226, 180, 95, 0.55);
+  stroke-width: 1;
+}
+.fn-cosmos .orbits .planet {
+  fill: #e2b45f;
+  stroke: none;
+}
+.fn-cosmos .orbits .p2 {
+  fill: #c9d3ef;
+}
+@keyframes fn-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.fn-cosmos .fn-sec-head h2 {
+  font-size: 2.3rem;
+}
+.fn-cosmos .principle {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 0 0 2rem;
+  max-width: 30em;
+}
+.fn-cosmos .principle span {
+  display: block;
+}
+.fn-cosmos .principle span:last-child {
+  color: var(--gold);
+}
+.fn-cosmos .fn-thoughts .d {
+  line-height: 1.5;
+}
+.fn-cosmos .carrying {
+  margin: 2.6rem 0 1rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 400;
+}
+.fn-cosmos .threads {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.6rem 2.6rem;
+}
+.fn-cosmos .thread b {
+  display: flex;
+  gap: 0.7rem;
+  align-items: baseline;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+.fn-cosmos .thread b i {
+  font-style: normal;
+  color: var(--gold);
+  font-size: 0.95rem;
+}
+.fn-cosmos .thread ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1.5rem;
+}
+.fn-cosmos .thread li {
+  position: relative;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: #c9cfdc;
+  padding: 0.28rem 0;
+}
+.fn-cosmos .thread li::before {
+  content: "✦";
+  position: absolute;
+  left: -1.2rem;
+  top: 0.32rem;
+  font-size: 0.6rem;
+  color: var(--gold);
+  opacity: 0.8;
+}
+
+/* entry pages in the bigger-questions series */
+.fn-entry-cosmos .fn-entry-head {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 3rem calc(50vw - min(22rem, 50vw - 15px)) 2.6rem;
+  border: 0;
+  color: #ece6d6;
+  background:
+    radial-gradient(ellipse at 80% 0%, rgba(70, 92, 150, 0.4), transparent 60%),
+    #0f1626;
+  overflow: hidden;
+  isolation: isolate;
+}
+.fn-entry-cosmos .fn-entry-head::before {
+  content: "";
+  position: absolute;
+  inset: -40px;
+  z-index: -1;
+  background-image:
+    radial-gradient(1px 1px at 20px 30px, #fff, transparent),
+    radial-gradient(1px 1px at 120px 80px, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(1.5px 1.5px at 60px 150px, rgba(255, 240, 210, 0.9), transparent),
+    radial-gradient(1px 1px at 230px 40px, rgba(255, 255, 255, 0.8), transparent);
+  background-size: 300px 220px;
+  opacity: 0.7;
+  animation: fn-drift 160s linear infinite;
+}
+.fn-entry-cosmos .fn-entry-head h1 {
+  color: #f1ead8;
+}
+.fn-entry-cosmos .fn-entry-head .back,
+.fn-entry-cosmos .fn-entry-head .fn-kicker,
+.fn-entry-cosmos .fn-entry-head .stand {
+  color: #aeb6c9;
+}
+.fn-status {
+  margin: 1rem 0 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.fn-entry-cosmos .fn-status {
+  color: #aeb6c9;
+}
+.fn-entry ul.wonder {
+  list-style: none;
+  padding: 0;
+  margin: 0.4rem 0 1.4rem;
+  border-top: 1px solid var(--rule);
+}
+.fn-entry ul.wonder li {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  padding: 0.6rem 0 0.6rem 1.6rem;
+  border-bottom: 1px solid var(--rule);
+  position: relative;
+}
+.fn-entry ul.wonder li::before {
+  content: "✦";
+  position: absolute;
+  left: 0.2rem;
+  top: 0.85rem;
+  font-size: 0.7rem;
+  color: var(--gold);
+}
+
+@media (max-width: 760px) {
+  .fn-cosmos .threads {
+    grid-template-columns: 1fr;
+  }
+  .fn-cosmos .orbits {
+    width: 340px;
+    height: 340px;
+    right: -150px;
+    top: -60px;
+  }
+  .fn-entry-cosmos .fn-entry-head {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fn-cosmos::before,
+  .fn-cosmos::after,
+  .fn-cosmos .orbits,
+  .fn-entry-cosmos .fn-entry-head::before {
+    animation: none;
+  }
+}
