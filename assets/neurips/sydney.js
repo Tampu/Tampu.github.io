@@ -4,14 +4,15 @@
 
   var LABELS = {
     coffee: "Coffee chats & group lunches",
-    sunset: "Sunset walk to Observatory Hill (Sun 6 Dec, evening)",
-    bondi: "Sunrise at Bondi",
+    sunset: "Sunset walk to Observatory Hill (6 or 12 Dec, evening)",
+    bondi: "Sunrise at Bondi (6 or 12 Dec)",
     dec13: "Sunday 13 Dec post-conference day out",
     one2one: "1:1 chat",
   };
   var ORDER = Object.keys(LABELS);
   var STORE = "neurips-sydney-2026";
   var picks = new Set();
+  var slots = new Set();
 
   var form = document.getElementById("interest");
   var card = document.getElementById("postcard");
@@ -36,6 +37,14 @@
   }
 
   document.addEventListener("click", function (e) {
+    var sl = e.target.closest("[data-slot]");
+    if (sl) {
+      var v = sl.dataset.slot;
+      if (slots.has(v)) slots.delete(v);
+      else slots.add(v);
+      sl.setAttribute("aria-pressed", slots.has(v) ? "true" : "false");
+      return;
+    }
     var el = e.target.closest("[data-pick]");
     if (!el) return;
     var id = el.dataset.pick;
@@ -57,6 +66,17 @@
   function val(name) {
     var el = form.elements[name];
     return el ? String(el.value || "").trim() : "";
+  }
+
+  function slotList() {
+    // keep the order the slots appear on the page
+    return Array.prototype.map
+      .call(document.querySelectorAll("[data-slot]"), function (b) {
+        return b.dataset.slot;
+      })
+      .filter(function (v) {
+        return slots.has(v);
+      });
   }
 
   function payload() {
@@ -82,7 +102,9 @@
       sunday_13dec: picks.has("dec13") ? "yes" : "",
       one_to_one: picks.has("one2one") ? "yes" : "",
       chat_topic: picks.has("one2one") ? val("chat_topic") : "",
-      note: val("note"),
+      availability: slotList().join("; "),
+      // copy of availability in the note, so it still lands in the Sheet if the Apps Script lacks an availability column
+      note: [val("note"), slots.size ? "Free: " + slotList().join("; ") : ""].filter(Boolean).join(" | "),
       source: new URLSearchParams(location.search).get("src") || document.referrer || "direct",
       _subject: "NeurIPS Sydney meetup: " + val("name"),
     };
@@ -123,7 +145,7 @@
 
   function remember(data) {
     try {
-      localStorage.setItem(STORE, JSON.stringify({ picks: Array.from(picks), name: data.name, email: data.email, affiliation: data.affiliation, role: data.role }));
+      localStorage.setItem(STORE, JSON.stringify({ picks: Array.from(picks), slots: Array.from(slots), name: data.name, email: data.email, affiliation: data.affiliation, role: data.role }));
     } catch (e) {}
   }
 
@@ -194,6 +216,12 @@
     if (saved) {
       (saved.picks || []).forEach(function (k) {
         if (LABELS[k]) picks.add(k);
+      });
+      (saved.slots || []).forEach(function (v) {
+        slots.add(v);
+      });
+      document.querySelectorAll("[data-slot]").forEach(function (b) {
+        if (slots.has(b.dataset.slot)) b.setAttribute("aria-pressed", "true");
       });
       ["name", "email", "affiliation"].forEach(function (k) {
         if (saved[k]) form.elements[k].value = saved[k];

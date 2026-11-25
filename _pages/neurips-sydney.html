@@ -30,7 +30,7 @@ contact_email: traviku2@asu.edu
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Caveat+Brush&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/assets/neurips/sydney.css' | relative_url }}?v=1">
+    <link rel="stylesheet" href="{{ '/assets/neurips/sydney.css' | relative_url }}?v=2">
   </head>
   <body>
     <header class="topbar">
@@ -362,7 +362,7 @@ contact_email: traviku2@asu.edu
                 <path d="M10 58q10-8 20-12" stroke-dasharray="1 5" />
               </svg>
               <h3>Sunset walk to Observatory Hill</h3>
-              <span class="when star">Sun 6 Dec · evening</span>
+              <span class="when star">6 or 12 Dec · evening</span>
               <p>Wander up together and watch the harbour turn gold behind the bridge.</p>
               <span class="toggle"><span class="off">+ I'm in</span><span class="on">✓ I'm in</span></span>
             </button>
@@ -375,7 +375,7 @@ contact_email: traviku2@asu.edu
                 <path d="M4 58c8-4 14 4 22 0s14 4 22 0 14 4 22 0" />
               </svg>
               <h3>Sunrise at Bondi Beach</h3>
-              <span class="when">Dawn · date flexible</span>
+              <span class="when">Dawn · 6 or 12 Dec</span>
               <p>For early risers and beach lovers. Coffee afterwards, obviously.</p>
               <span class="toggle"><span class="off">+ I'm in</span><span class="on">✓ I'm in</span></span>
             </button>
@@ -406,7 +406,7 @@ contact_email: traviku2@asu.edu
               <span class="toggle"><span class="off">+ I'm in</span><span class="on">✓ I'm in</span></span>
             </button>
           </div>
-          <p class="cards-foot">The sunset walk is our one suggested date. Everything else is flexible, and we'll pick times that suit whoever joins.</p>
+          <p class="cards-foot">Nothing's booked yet. Tell us when you're free, and we'll pick the times that work for most people.</p>
         </div>
       </section>
 
@@ -452,7 +452,7 @@ contact_email: traviku2@asu.edu
                   <span class="label" id="picks-label">I'd love to join</span>
                   <div class="chips" role="group" aria-labelledby="picks-label">
                     <button type="button" class="chip" data-pick="coffee" aria-pressed="false">☕ Coffee &amp; lunches</button>
-                    <button type="button" class="chip" data-pick="sunset" aria-pressed="false">🌅 Sunset walk · 6 Dec</button>
+                    <button type="button" class="chip" data-pick="sunset" aria-pressed="false">🌅 Sunset walk</button>
                     <button type="button" class="chip" data-pick="bondi" aria-pressed="false">🌊 Bondi sunrise</button>
                     <button type="button" class="chip" data-pick="dec13" aria-pressed="false">🏛 Sunday 13 Dec</button>
                     <button type="button" class="chip" data-pick="one2one" aria-pressed="false">💬 1:1 chat</button>
@@ -467,6 +467,32 @@ contact_email: traviku2@asu.edu
                     </div>
                   </div>
 
+
+                  <span class="label" id="slots-label">When are you free? <em>(Sydney time · pick as many as you like)</em></span>
+                  <div class="slots" role="group" aria-labelledby="slots-label">
+                    <div class="slot-row"><span class="slot-day">Sun 6 Dec</span><div class="chips">
+                      <button type="button" class="chip sm" data-slot="Sun 6 Dec 5–7 AM (sunrise)" aria-pressed="false">5–7 AM <i>sunrise</i></button>
+                      <button type="button" class="chip sm" data-slot="Sun 6 Dec 10–10:30 AM" aria-pressed="false">10–10:30 AM</button>
+                      <button type="button" class="chip sm" data-slot="Sun 6 Dec 12–2 PM" aria-pressed="false">12–2 PM</button>
+                      <button type="button" class="chip sm" data-slot="Sun 6 Dec 6–8 PM (sunset)" aria-pressed="false">6–8 PM <i>sunset</i></button>
+                    </div></div>
+                    <div class="slot-row"><span class="slot-day">Mon 7 – Fri 11</span><div class="chips">
+                      <button type="button" class="chip sm" data-slot="Mon 7 – Fri 11 10–10:30 AM" aria-pressed="false">10–10:30 AM</button>
+                      <button type="button" class="chip sm" data-slot="Mon 7 – Fri 11 12–2 PM" aria-pressed="false">12–2 PM</button>
+                      <button type="button" class="chip sm" data-slot="Mon 7 – Fri 11 2–4 PM" aria-pressed="false">2–4 PM</button>
+                    </div></div>
+                    <div class="slot-row"><span class="slot-day">Sat 12 Dec</span><div class="chips">
+                      <button type="button" class="chip sm" data-slot="Sat 12 Dec 5–7 AM (sunrise)" aria-pressed="false">5–7 AM <i>sunrise</i></button>
+                      <button type="button" class="chip sm" data-slot="Sat 12 Dec 10–10:30 AM" aria-pressed="false">10–10:30 AM</button>
+                      <button type="button" class="chip sm" data-slot="Sat 12 Dec 12–2 PM" aria-pressed="false">12–2 PM</button>
+                      <button type="button" class="chip sm" data-slot="Sat 12 Dec 6–8 PM (sunset)" aria-pressed="false">6–8 PM <i>sunset</i></button>
+                    </div></div>
+                    <div class="slot-row"><span class="slot-day">Sun 13 Dec</span><div class="chips">
+                      <button type="button" class="chip sm" data-slot="Sun 13 Dec 8–10 AM" aria-pressed="false">8–10 AM</button>
+                      <button type="button" class="chip sm" data-slot="Sun 13 Dec 12–3 PM" aria-pressed="false">12–3 PM</button>
+                    </div></div>
+                    <p class="slot-note">Just a heads-up on when you’re around, not a booking.</p>
+                  </div>
                   <span class="label" id="role-label">I'm… <em>(optional)</em></span>
                   <div class="chips" role="radiogroup" aria-labelledby="role-label">
                     <label class="chip radio"><input type="radio" name="role" value="Faculty / senior researcher"><span>Faculty / senior researcher</span></label>
@@ -474,11 +500,6 @@ contact_email: traviku2@asu.edu
                     <label class="chip radio"><input type="radio" name="role" value="Early-career researcher"><span>Early-career researcher</span></label>
                     <label class="chip radio"><input type="radio" name="role" value="Industry"><span>Industry</span></label>
                     <label class="chip radio"><input type="radio" name="role" value="Just curious"><span>Just curious</span></label>
-                  </div>
-
-                  <div class="field">
-                    <label class="label" for="f-note">Anything else? <em>(optional)</em></label>
-                    <textarea id="f-note" name="note" rows="2" placeholder="dates that don't work, a topic you love, a friend you're bringing…"></textarea>
                   </div>
                 </div>
 
@@ -514,6 +535,10 @@ contact_email: traviku2@asu.edu
                     <div class="field">
                       <label class="label" for="f-aff">Lab / company <em>(optional)</em></label>
                       <input id="f-aff" name="affiliation" type="text" autocomplete="organization" placeholder="where you're coming from">
+                    </div>
+                  <div class="field">
+                      <label class="label" for="f-note">Anything else? <em>(optional)</em></label>
+                      <textarea id="f-note" name="note" rows="2" placeholder="dates that don't work, a topic you love, a friend you're bringing…"></textarea>
                     </div>
                     <label class="hp" aria-hidden="true">Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
                   </div>
@@ -584,6 +609,6 @@ contact_email: traviku2@asu.edu
       <a class="btn" href="#count-me-in">Say hi →</a>
     </div>
 
-    <script src="{{ '/assets/neurips/sydney.js' | relative_url }}?v=1" defer></script>
+    <script src="{{ '/assets/neurips/sydney.js' | relative_url }}?v=2" defer></script>
   </body>
 </html>

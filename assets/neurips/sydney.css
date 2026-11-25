@@ -919,6 +919,44 @@ section {
   width: 22%;
 }
 
+/* time-slot picker */
+.slots {
+  margin-bottom: 20px;
+}
+.slot-row {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 8px;
+  align-items: start;
+  padding: 7px 0;
+  border-bottom: 1px dashed #eadcc4;
+}
+.slot-day {
+  font-weight: 800;
+  font-size: 14px;
+  padding-top: 6px;
+  line-height: 1.25;
+}
+.slots .chips {
+  margin: 0;
+  gap: 6px;
+}
+.chip.sm {
+  font-size: 13.5px;
+  padding: 7px 11px;
+}
+.chip.sm i {
+  font-style: normal;
+  font-weight: 600;
+  opacity: 0.7;
+}
+.slot-note {
+  font-family: var(--script);
+  font-size: 20px;
+  color: var(--ink-soft);
+  margin: 8px 0 0;
+}
+
 /* sticky "you picked" pill */
 .picked-bar {
   position: fixed;
