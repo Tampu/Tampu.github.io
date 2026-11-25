@@ -245,49 +245,6 @@ a {
   border-left: 2px solid rgba(31, 43, 77, 0.35);
   padding-left: 16px;
 }
-.host {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  margin: 20px 0 0;
-  padding: 6px 18px 6px 6px;
-  border-radius: 999px;
-  background: rgba(255, 248, 238, 0.88);
-  box-shadow: 0 10px 30px -18px rgba(90, 50, 10, 0.5);
-  font-size: 15.5px;
-  line-height: 1.35;
-  color: #28355a;
-}
-@media (min-width: 861px) {
-  .host {
-    white-space: nowrap;
-  }
-}
-@media (max-width: 520px) {
-  .host {
-    border-radius: 18px;
-  }
-}
-.host-photo img {
-  display: block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #fff;
-  box-shadow: 0 4px 12px -6px rgba(31, 43, 77, 0.6);
-}
-.host a:not(.host-photo) {
-  color: var(--ink);
-  font-weight: 800;
-  text-decoration: underline;
-  text-decoration-color: var(--sun);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
-}
-.host a:not(.host-photo):hover {
-  color: var(--harbour-deep);
-}
 .hero-actions {
   display: flex;
   align-items: center;
@@ -1049,6 +1006,21 @@ section {
   background: linear-gradient(180deg, #fdeedd 0%, #f9d9c4 40%, #d7c6ea 100%);
   overflow: hidden;
   text-align: center;
+}
+.whoami {
+  margin: 0 0 18px;
+  font-family: var(--script);
+  font-size: 26px;
+}
+.whoami a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--sun);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+.whoami a:hover {
+  color: var(--harbour-deep);
 }
 .closing .script {
   font-family: var(--hand);
