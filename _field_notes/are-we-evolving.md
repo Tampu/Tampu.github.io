@@ -59,4 +59,4 @@ Not much, and some of it argues with the question.
 </ul>
 </section>
 
-<p class="signoff">to be continued, probably in 2028, probably changed.</p>
+<p class="signoff">to be continued, probably changed.</p>
