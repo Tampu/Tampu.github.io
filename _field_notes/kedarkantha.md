@@ -33,13 +33,24 @@ photos:
   - file: kedarkantha/camp-at-night.jpg
     label: Camp, after dark.
     ratio: "9 / 16"
+  - file: kedarkantha/tents-under-stars.jpg
+    label: More stars than I knew existed.
+    ratio: "9 / 16"
+  - file: kedarkantha/stars-overhead.jpg
+    label: Straight up, from camp.
+    ratio: "16 / 9"
+  - file: kedarkantha/milky-way.jpg
+    label: Too cold to sleep, too pretty to mind.
+    ratio: "9 / 16"
 facts:
   - label: Duration
     value: Six days
+  - label: When
+    value: December 2024
   - label: Where
     value: Kedarkantha, Uttarakhand, India
   - label: Favourite moment
-    value: ""
+    value: "The summit push. I was sure I wouldn't make it, nearly slipped off the edge, and then cried when the sun came up."
 excerpt: ""
 ---
 

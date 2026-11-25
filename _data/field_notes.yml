@@ -76,6 +76,72 @@ lens:
     caption: "An empty road through the pines at dusk."
     note: ""
     ratio: "3 / 4"
+  - file: sunset-through-trees.jpg
+    place: Scotland
+    date: ""
+    caption: "Sun going down over the water, through the trees."
+    note: ""
+    ratio: "9 / 16"
+  - file: reading-at-sunset.jpg
+    place: Scotland
+    date: ""
+    caption: "A book, the sea, and the sun right in the gutter."
+    note: ""
+    ratio: "9 / 16"
+  - file: pier-sunset.jpg
+    place: Scotland
+    date: ""
+    caption: "Sunset off the end of the pier."
+    note: ""
+    ratio: "9 / 16"
+  - file: highland-path.jpg
+    place: Scottish Highlands
+    date: ""
+    caption: "Heather, a path, and a hill disappearing into cloud."
+    note: ""
+    ratio: "9 / 16"
+  - file: green-lochan.jpg
+    place: Scottish Highlands
+    date: ""
+    caption: "Water that green is not a filter."
+    note: ""
+    ratio: "9 / 16"
+  - file: beach-bonfire.jpg
+    place: Scotland
+    date: ""
+    caption: "A fire dug into the sand, hands out for warmth."
+    note: ""
+    ratio: "9 / 16"
+  - file: scott-monument-fog.jpg
+    place: Edinburgh
+    date: ""
+    caption: "The Scott Monument, mostly fog."
+    note: ""
+    ratio: "9 / 16"
+  - file: loch-rocks.jpg
+    place: Scotland
+    date: ""
+    caption: "Rocks, water, and a very blue day."
+    note: ""
+    ratio: "9 / 16"
+  - file: loch-shore.jpg
+    place: Scotland
+    date: ""
+    caption: "Someone and their dog, and the wind on the water."
+    note: ""
+    ratio: "9 / 16"
+  - file: kilt-rock.jpg
+    place: Isle of Skye
+    date: ""
+    caption: "The waterfall at Kilt Rock, straight into the sea."
+    note: ""
+    ratio: "9 / 16"
+  - file: quiraing.jpg
+    place: Isle of Skye
+    date: ""
+    caption: "The road through the Quiraing."
+    note: ""
+    ratio: "9 / 16"
 
 remember:
   quotes:
