@@ -142,6 +142,18 @@ lens:
     caption: "The road through the Quiraing."
     note: ""
     ratio: "9 / 16"
+  - file: edinburgh-night.jpg
+    place: Edinburgh
+    date: ""
+    caption: "The castle, the Balmoral clock and the big wheel, all lit up."
+    note: ""
+    ratio: "16 / 9"
+  - file: balmoral-moon.jpg
+    place: Edinburgh
+    date: ""
+    caption: "The moon came up right next to the Balmoral clock."
+    note: ""
+    ratio: "9 / 16"
 
 remember:
   quotes:
