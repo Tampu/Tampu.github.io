@@ -259,7 +259,9 @@
 }
 .fn-lens .fn-print {
   break-inside: avoid;
-  margin-bottom: 1.6rem;
+  display: inline-block;
+  width: 100%;
+  margin: 12px 0 1.6rem;
 }
 .fn-lens .fn-print:nth-child(3n + 2) {
   transform: rotate(0.6deg);
