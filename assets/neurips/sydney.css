@@ -143,15 +143,6 @@ a {
   overflow: hidden;
   isolation: isolate;
 }
-/* soft cream veil over the harbour scene, to keep the hero light */
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background: linear-gradient(180deg, rgba(255, 250, 242, 0.5) 0%, rgba(255, 250, 242, 0.38) 60%, rgba(255, 250, 242, 0.3) 100%);
-}
 .scene {
   position: absolute;
   inset: 0;
