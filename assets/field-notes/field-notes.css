@@ -505,7 +505,7 @@
   font-size: 1.4rem;
   line-height: 1.2;
   color: var(--gold);
-  transform: rotate(-1.5deg);
+  transform: none;
   margin: -0.2rem 0 1.2rem;
 }
 .fn-entry blockquote.lit {
@@ -663,7 +663,7 @@
 }
 .fn-head .fn-thread {
   margin-top: 1rem;
-  transform: rotate(-1deg);
+  transform: none;
   font-size: 1.3rem;
 }
 .fn .status {
