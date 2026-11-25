@@ -1567,3 +1567,9 @@ footer a {
     height: 200px;
   }
 }
+.fn-night {
+  background-position: center, center 14%;
+}
+.fn-entry-night .fn-entry-head {
+  background-position: center, center 14%;
+}
