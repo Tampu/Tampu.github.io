@@ -22,42 +22,60 @@ sections:
     blurb: Research papers, unexpected connections and ideas.
 
 lens:
-  - file: ""
-    place: Bengaluru
-    date: ""
-    caption: ""
+  - file: grand-canyon-rim-trail.jpg
+    place: Grand Canyon, South Rim
+    date: Nov 2025
+    caption: "Walking the rim trail by starlight."
     note: ""
-    ratio: "4 / 5"
-  - file: ""
-    place: London
-    date: ""
-    caption: ""
+    ratio: "3 / 4"
+  - file: a-mountain-sunset.jpg
+    place: A Mountain, Tempe
+    date: Feb 2025
+    caption: "Feet up, sun down."
     note: ""
-    ratio: "3 / 2"
-  - file: ""
-    place: Leuven
-    date: ""
-    caption: ""
+    ratio: "3 / 4"
+  - file: sedona-red-rocks.jpg
+    place: Sedona
+    date: Jan 2025
+    caption: "Red rocks at dusk, a little out of focus."
     note: ""
-    ratio: "1 / 1"
-  - file: ""
-    place: Edinburgh
-    date: ""
-    caption: ""
+    ratio: "3 / 4"
+  - file: grand-canyon-night.jpg
+    place: Grand Canyon, South Rim
+    date: Nov 2025
+    caption: "The canyon after dark."
     note: ""
-    ratio: "3 / 2"
-  - file: ""
-    place: Tempe
-    date: ""
-    caption: ""
+    ratio: "4 / 3"
+  - file: papago-buttes-flight.jpg
+    place: A Mountain, Tempe
+    date: Feb 2025
+    caption: "A flight coming in over the Papago Buttes, Camelback behind."
     note: ""
-    ratio: "4 / 5"
-  - file: ""
-    place: Uttarakhand
-    date: ""
-    caption: ""
+    ratio: "3 / 4"
+  - file: hayden-library-bougainvillea.jpg
+    place: Hayden Library, ASU
+    date: Jan 2025
+    caption: "Bougainvillea in full bloom, in January."
     note: ""
-    ratio: "3 / 2"
+    ratio: "3 / 4"
+  - file: grand-canyon-bench.jpg
+    place: Grand Canyon, South Rim
+    date: Nov 2025
+    caption: "A bench at the edge, and nobody on it."
+    note: ""
+    ratio: "3 / 4"
+  - file: tempe-city-lights.jpg
+    place: A Mountain, Tempe
+    date: Feb 2025
+    caption: "City lights coming on under the last of the sun."
+    note: ""
+    ratio: "3 / 4"
+  - file: flagstaff-pines-road.jpg
+    place: Near Flagstaff
+    date: Jan 2025
+    caption: "An empty road through the pines at dusk."
+    note: ""
+    ratio: "3 / 4"
 
 remember:
   quotes:
