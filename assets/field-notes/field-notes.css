@@ -1181,3 +1181,34 @@ footer a {
     animation: none;
   }
 }
+
+/* Kedarkantha: cover + a contact-sheet roll underneath */
+.fn-trail .fn-print figcaption {
+  font-family: var(--hand);
+  font-size: 1.15rem;
+  letter-spacing: 0;
+  color: var(--muted);
+}
+.fn-roll-label {
+  margin: 2.2rem 0 0.8rem;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+.fn-roll {
+  columns: 4 180px;
+}
+.fn-roll .fn-print figcaption {
+  font-size: 0.7rem;
+}
+.fn-trail {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+}
+@media (max-width: 760px) {
+  .fn-trail {
+    grid-template-columns: 1fr;
+  }
+}

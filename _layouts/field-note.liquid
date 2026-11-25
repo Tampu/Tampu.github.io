@@ -4,7 +4,7 @@ layout: page
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ '/assets/field-notes/field-notes.css' | relative_url }}?v=6">
+<link rel="stylesheet" href="{{ '/assets/field-notes/field-notes.css' | relative_url }}?v=7">
 
 {% assign sec = site.data.field_notes.sections | where: 'id', page.section | first %}
 <article class="fn fn-entry{% if page.section == 'bigger-questions' %} fn-entry-cosmos{% endif %}">
@@ -18,7 +18,7 @@ layout: page
   </header>
 
   {% if page.cover %}
-    <figure class="fn-print" style="--ar: 3 / 2; margin-bottom: 1rem">
+    <figure class="fn-print" style="--ar: 4 / 5; margin-bottom: 1rem; max-width: 30rem">
       {% if page.cover.file != '' %}
         <img src="{{ page.cover.file | prepend: '/assets/field-notes/' | relative_url }}" alt="{{ page.cover.label }}" loading="lazy">
       {% else %}
@@ -28,6 +28,20 @@ layout: page
   {% endif %}
 
   {{ content }}
+
+  {% if page.photos %}
+    <div class="fn-lens fn-roll" style="margin-top: 2rem">
+      {% for ph in page.photos %}
+        {% if ph.file != '' %}
+          <figure class="fn-print film" style="--ar: {{ ph.ratio | default: '3 / 4' }}">
+            <span class="frame-no">{{ forloop.index | prepend: '0' | slice: -2, 2 }}K</span>
+            <img src="{{ ph.file | prepend: '/assets/field-notes/' | relative_url }}" alt="{{ ph.label }}" loading="lazy">
+            <figcaption>{{ ph.label }}</figcaption>
+          </figure>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
 
   <footer class="fn-entry-foot">
     <a href="{{ '/field-notes/' | relative_url }}">← Back to Field Notes</a>
