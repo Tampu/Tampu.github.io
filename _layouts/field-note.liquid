@@ -1,0 +1,35 @@
+---
+layout: page
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/field-notes/field-notes.css' | relative_url }}?v=1">
+
+{% assign sec = site.data.field_notes.sections | where: 'id', page.section | first %}
+<article class="fn fn-entry">
+  <header class="fn-entry-head">
+    <a class="back" href="{{ '/field-notes/' | relative_url }}#{{ page.section }}">← Field Notes</a>
+    <p class="fn-kicker" style="margin-top: 1.4rem">{{ sec.name }} · {{ page.date | date: '%-d %b %Y' | upcase }}</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.standfirst %}<p class="stand">{{ page.standfirst }}</p>{% endif %}
+    {% if page.subtitle %}<p class="stand">{{ page.subtitle }}</p>{% endif %}
+  </header>
+
+  {% if page.cover %}
+    <figure class="fn-print" style="--ar: 3 / 2; margin-bottom: 1rem">
+      {% if page.cover.file != '' %}
+        <img src="{{ page.cover.file | prepend: '/assets/field-notes/' | relative_url }}" alt="{{ page.cover.label }}" loading="lazy">
+      {% else %}
+        <div class="ph"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg><span class="fn-hand">{{ page.cover.label }} goes here</span></div></div>
+      {% endif %}
+    </figure>
+  {% endif %}
+
+  {{ content }}
+
+  <footer class="fn-entry-foot">
+    <a href="{{ '/field-notes/' | relative_url }}">← Back to Field Notes</a>
+    <span>Filed under {{ sec.name | downcase }}</span>
+  </footer>
+</article>

@@ -1,0 +1,165 @@
+---
+layout: page
+permalink: /field-notes/
+title: field notes
+description: A personal collection of curiosities.
+nav: true
+nav_order: 4
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/field-notes/field-notes.css' | relative_url }}?v=1">
+
+{% assign fn = site.data.field_notes %}
+{% assign notes = site.field_notes | sort: 'date' | reverse %}
+{% assign camera = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg>' %}
+
+<div class="fn">
+  <!-- A. opening -->
+  <header class="fn-head">
+    <div>
+      <p class="fn-kicker">A personal journal · est. 2026</p>
+      <h1>Field Notes<em>.</em></h1>
+      <p class="lead">Curiosity rarely follows a straight line.</p>
+      <p>A collection of places I've explored, photographs I've taken, questions that kept me awake, and ideas that led me somewhere unexpected.</p>
+    </div>
+    <nav aria-label="Field Notes sections">
+      <ol class="fn-contents">
+        {% for s in fn.sections %}
+          <li><a href="#{{ s.id }}"><i>0{{ forloop.index }}</i><b>{{ s.name }}</b><span>{{ s.blurb }}</span></a></li>
+        {% endfor %}
+      </ol>
+    </nav>
+  </header>
+
+  <!-- B. on the trail -->
+  {% assign trail = notes | where: 'section', 'on-the-trail' %}
+  <section class="fn-sec" id="on-the-trail">
+    <div class="fn-sec-head"><span class="no">01</span><h2>On the trail</h2><span class="fn-hand">boots, maps, blisters</span></div>
+    {% for t in trail limit: 1 %}
+      <div class="fn-trail">
+        <div>
+          <figure class="fn-print taped" style="--ar: 4 / 3">
+            {% if t.cover.file and t.cover.file != '' %}
+              <img src="{{ t.cover.file | prepend: '/assets/field-notes/' | relative_url }}" alt="{{ t.title }}: {{ t.cover.label }}" loading="lazy">
+            {% else %}
+              <div class="ph"><div>{{ camera }}<span class="fn-hand">{{ t.cover.label }} goes here</span></div></div>
+            {% endif %}
+          </figure>
+          <div class="side">
+            {% for ph in t.photos %}
+              <figure class="fn-print" style="--ar: 1 / 1">
+                {% if ph.file != '' %}
+                  <img src="{{ ph.file | prepend: '/assets/field-notes/' | relative_url }}" alt="{{ ph.label }}" loading="lazy">
+                {% else %}
+                  <div class="ph"><div>{{ camera }}<span class="fn-hand">{{ ph.label }}</span></div></div>
+                {% endif %}
+              </figure>
+            {% endfor %}
+          </div>
+        </div>
+        <div>
+          <p class="fn-kicker">Featured story</p>
+          <h3>{{ t.title }}</h3>
+          <p class="where">{{ t.subtitle }}</p>
+          <dl class="fn-facts">
+            {% for f in t.facts %}
+              <div><dt>{{ f.label }}</dt><dd>{% if f.value != '' %}{{ f.value }}{% else %}<span class="fn-hand" style="font-size: 1.15rem">still deciding…</span>{% endif %}</dd></div>
+            {% endfor %}
+          </dl>
+          {% if t.story_ready %}
+            {% if t.excerpt != '' %}<p>{{ t.excerpt }}</p>{% endif %}
+            <a href="{{ t.url | relative_url }}">Read the story →</a>
+          {% else %}
+            <p class="fn-hand">The story is coming. The photos are still being sorted.</p>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+
+  <!-- C. through my lens -->
+  <section class="fn-sec" id="through-my-lens">
+    <div class="fn-sec-head"><span class="no">02</span><h2>Through my lens</h2><span class="fn-hand">no filters, mostly</span></div>
+    <div class="fn-lens">
+      {% for p in fn.lens %}
+        <figure class="fn-print{% cycle '', ' taped', '' %}" style="--ar: {{ p.ratio | default: '4 / 3' }}">
+          {% if p.file != '' %}
+            <img src="{{ p.file | prepend: '/assets/field-notes/lens/' | relative_url }}" alt="{{ p.caption | default: p.place }}" loading="lazy">
+          {% else %}
+            <div class="ph"><div>{{ camera }}<span class="fn-hand">photo to come</span></div></div>
+          {% endif %}
+          <figcaption>
+            <b>{{ p.place }}</b>{% if p.date != '' %} · {{ p.date }}{% endif %}
+            {% if p.caption != '' %}<br>{{ p.caption }}{% endif %}
+            {% if p.note != '' %}<br><em>{{ p.note }}</em>{% endif %}
+          </figcaption>
+        </figure>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- D. midnight thoughts -->
+  {% assign thoughts = notes | where: 'section', 'midnight-thoughts' %}
+  <section class="fn-sec" id="midnight-thoughts">
+    <div class="fn-sec-head"><span class="no">03</span><h2>Midnight thoughts</h2><span class="fn-hand">things that kept me up</span></div>
+    <ol class="fn-thoughts">
+      {% for t in thoughts %}
+        <li>
+          <a href="{{ t.url | relative_url }}">
+            <span class="d">{{ t.date | date: '%-d %b %Y' | upcase }}</span>
+            <div>
+              <h3>{{ t.title }}</h3>
+              <p>{{ t.excerpt }}</p>
+              {% if t.tags %}<div class="tags">{% for tag in t.tags %}<span>{{ tag }}</span>{% endfor %}</div>{% endif %}
+            </div>
+            <span class="go">read →</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <!-- E. down the rabbit hole -->
+  <section class="fn-sec" id="rabbit-hole">
+    <div class="fn-sec-head"><span class="no">04</span><h2>Down the rabbit hole</h2><span class="fn-hand">one link led to another</span></div>
+    {% for t in notes %}
+      {% if t.rabbit_hole %}
+        <div class="fn-burrow" style="--n: {{ t.rabbit_hole.size }}">
+          {% for r in t.rabbit_hole %}
+            <div class="stop">
+              <b>{{ r.step }}</b>
+              <p>{{ r.note }}</p>
+              <a href="{{ r.url }}">{{ r.paper }}</a>
+            </div>
+          {% endfor %}
+        </div>
+        <p class="fn-burrow-foot">Where <a href="{{ t.url | relative_url }}">{{ t.title }}</a> took me, {{ t.date | date: '%B %Y' }}.</p>
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  </section>
+
+  <!-- F. things worth remembering -->
+  <section class="fn-sec" id="worth-remembering">
+    <div class="fn-sec-head"><span class="no">✶</span><h2>Things worth remembering</h2></div>
+    <div class="fn-keep">
+      <div>
+        {% for q in fn.remember.quotes %}
+          <blockquote><p>{{ q.text }}</p><cite>{{ q.source }}</cite></blockquote>
+        {% endfor %}
+      </div>
+      <div>
+        <h4>On the nightstand</h4>
+        <ul>
+          {% for b in fn.remember.books %}<li><em>{{ b.title }}</em> <i>· {{ b.by }}</i></li>{% endfor %}
+        </ul>
+        <h4>Questions without answers</h4>
+        <ul class="q">
+          {% for q in fn.remember.questions %}<li>{{ q }}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>

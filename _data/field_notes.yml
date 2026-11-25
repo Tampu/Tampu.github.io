@@ -1,0 +1,79 @@
+# Field Notes: the small, list-like parts of the page.
+# Long entries (hikes, midnight thoughts) live as Markdown files in _field_notes/.
+#
+# Photos: drop the file in assets/field-notes/lens/ and put its name in `file:`.
+# An empty `file:` shows a taped placeholder instead. `ratio` is width / height of the frame.
+
+sections:
+  - id: on-the-trail
+    name: On the trail
+    blurb: Hikes, journeys and outdoor adventures.
+  - id: through-my-lens
+    name: Through my lens
+    blurb: Photography and visual stories.
+  - id: midnight-thoughts
+    name: Midnight thoughts
+    blurb: Questions, observations and random thoughts.
+  - id: rabbit-hole
+    name: Down the rabbit hole
+    blurb: Research papers, unexpected connections and ideas.
+
+lens:
+  - file: ""
+    place: Bengaluru
+    date: ""
+    caption: ""
+    note: ""
+    ratio: "4 / 5"
+  - file: ""
+    place: London
+    date: ""
+    caption: ""
+    note: ""
+    ratio: "3 / 2"
+  - file: ""
+    place: Leuven
+    date: ""
+    caption: ""
+    note: ""
+    ratio: "1 / 1"
+  - file: ""
+    place: Edinburgh
+    date: ""
+    caption: ""
+    note: ""
+    ratio: "3 / 2"
+  - file: ""
+    place: Tempe
+    date: ""
+    caption: ""
+    note: ""
+    ratio: "4 / 5"
+  - file: ""
+    place: Uttarakhand
+    date: ""
+    caption: ""
+    note: ""
+    ratio: "3 / 2"
+
+remember:
+  quotes:
+    - text: "You could never convince a monkey to give you a banana by promising him limitless bananas after death in monkey heaven."
+      source: "Yuval Noah Harari, Sapiens"
+    - text: "The mind is restless, turbulent, obstinate and very strong, O Krishna, and to subdue it, I think, is more difficult than controlling the wind."
+      source: "Arjuna, Bhagavad Gita 6.34"
+    - text: "Whatever will be, will be."
+      source: "Que Sera, Sera (Livingston & Evans), sung by Doris Day"
+  books:
+    - title: Sapiens
+      by: Yuval Noah Harari
+    - title: The Palace of Illusions
+      by: Chitra Banerjee Divakaruni
+    - title: The Bhagavad Gita
+      by: chapters 2 and 6, again
+    - title: The Mahabharata
+      by: the Yaksha's questions, mostly
+  questions:
+    - "Can a machine reason about a world it never had to describe?"
+    - "If it can, how would we know what it was thinking?"
+    - "Is a picture a thought, or just the memory of one?"

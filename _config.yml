@@ -197,6 +197,9 @@ collections:
     output: true
   teachings:
     output: true
+  field_notes:
+    output: true
+    permalink: /field-notes/:name/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
