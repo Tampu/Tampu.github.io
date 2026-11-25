@@ -143,15 +143,6 @@ a {
   overflow: hidden;
   isolation: isolate;
 }
-/* soft cream veil over the harbour scene, to keep the hero light */
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background: linear-gradient(180deg, rgba(255, 250, 242, 0.5) 0%, rgba(255, 250, 242, 0.38) 60%, rgba(255, 250, 242, 0.3) 100%);
-}
 .scene {
   position: absolute;
   inset: 0;
@@ -580,141 +571,6 @@ section {
   font-family: var(--script);
   font-size: 23px;
   color: var(--ink-soft);
-}
-
-/* hero layout: copy left, activity picker right */
-.hero-grid {
-  width: min(1240px, 100% - 40px);
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 540px);
-  gap: 48px;
-  align-items: start;
-}
-.hero-grid .hero-copy {
-  max-width: 600px;
-}
-.hero h1 {
-  font-size: clamp(56px, 7vw, 100px);
-}
-.hero-picks {
-  padding-top: clamp(92px, 12vh, 124px);
-}
-.hero .picks-title {
-  font-family: var(--hand);
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 1;
-  margin: 0 0 4px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.picks-title .dash {
-  width: 26px;
-  height: 22px;
-}
-.picks-sub,
-.hero .cards-foot {
-  font-family: var(--script);
-  font-size: 21px;
-  line-height: 1.2;
-  color: var(--ink-soft);
-  margin: 0 0 10px;
-  text-align: left;
-}
-.hero .cards-foot {
-  margin: 10px 0 0;
-  font-size: 19px;
-  color: var(--ink);
-  background: rgba(255, 248, 238, 0.85);
-  border-radius: 12px;
-  padding: 4px 12px;
-}
-.hero .cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 8px;
-}
-.hero .card {
-  display: grid;
-  grid-template-columns: 50px minmax(0, 1fr) auto;
-  grid-template-areas:
-    "ico title toggle"
-    "ico when toggle"
-    "ico desc toggle";
-  column-gap: 14px;
-  align-items: center;
-  text-align: left;
-  padding: 9px 14px;
-  border-radius: 18px;
-}
-.hero .card .stamp {
-  display: none;
-}
-.hero .card .ico {
-  grid-area: ico;
-  width: 50px;
-  height: 44px;
-  margin: 0;
-  align-self: center;
-}
-.hero .card h3 {
-  grid-area: title;
-  font-size: 22px;
-  margin: 0 0 2px;
-}
-.hero .card .when {
-  grid-area: when;
-  justify-self: start;
-  font-size: 10.5px;
-  padding: 1px 9px;
-  margin: 0 0 3px;
-}
-.hero .card p {
-  grid-area: desc;
-  font-size: 13.5px;
-  line-height: 1.35;
-  margin: 0;
-}
-.hero .card .toggle {
-  grid-area: toggle;
-  margin: 0;
-  font-size: 14px;
-  padding: 6px 13px;
-  white-space: nowrap;
-}
-.hero .card:hover,
-.hero .card[aria-pressed="true"] {
-  transform: rotate(calc(var(--tilt) * 0.4)) translateX(-3px);
-}
-@media (max-width: 1080px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-  .hero-picks {
-    padding-top: 0;
-  }
-}
-@media (max-width: 520px) {
-  .hero .card {
-    grid-template-columns: 44px minmax(0, 1fr);
-    grid-template-areas:
-      "ico title"
-      "ico when"
-      "ico desc"
-      "ico toggle";
-    padding: 12px 14px;
-  }
-  .hero .card .ico {
-    width: 44px;
-    height: 40px;
-    align-self: start;
-  }
-  .hero .card .toggle {
-    justify-self: start;
-    margin-top: 8px;
-  }
 }
 
 /* welcome + quote */
@@ -1238,6 +1094,28 @@ footer a {
   }
   .sec-title .dash {
     display: none;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: 58px 1fr;
+    gap: 0 14px;
+    text-align: left;
+    align-items: start;
+    padding: 18px 18px 16px;
+  }
+  .card .ico {
+    grid-row: span 4;
+    width: 58px;
+    height: 52px;
+  }
+  .card .toggle {
+    justify-self: start;
+  }
+  .card p {
+    margin-bottom: 10px;
+  }
+  .card .when {
+    justify-self: start;
   }
   .hero-copy {
     padding-top: 92px;
