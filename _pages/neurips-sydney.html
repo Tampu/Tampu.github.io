@@ -32,7 +32,7 @@ contact_email: traviku2@asu.edu
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Caveat+Brush&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/assets/neurips/sydney.css' | relative_url }}?v=3">
+    <link rel="stylesheet" href="{{ '/assets/neurips/sydney.css' | relative_url }}?v=2">
   </head>
   <body>
     <header class="topbar">
@@ -295,7 +295,7 @@ contact_email: traviku2@asu.edu
 <circle cx="105" cy="682" r="22" fill="#f3c27a" opacity=".25"/>
 </g>
 </svg>
-        <div class="wrap hero-grid">
+        <div class="wrap">
           <div class="hero-copy">
             <h1 id="hero-title">
               Beyond the<br>Posters<svg class="rays" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 30L4 6" /><path d="M14 32L30 10" /><path d="M16 36L38 30" /></svg>
@@ -320,88 +320,12 @@ contact_email: traviku2@asu.edu
               <p>No formal agenda. No expectations.<br>Just good conversations and good company.</p>
             </div>
             <div class="hero-actions">
-              <a class="btn" href="#count-me-in">
-                Count me in
+              <a class="btn" href="#connect">
+                See what's on
                 <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v13M4 11l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg>
               </a>
               <span class="hint">takes about 30 seconds</span>
             </div>
-          </div>
-          <div class="hero-picks" id="connect" aria-labelledby="connect-title">
-        <h2 class="picks-title" id="connect-title">
-          <svg class="dash" viewBox="0 0 30 24" aria-hidden="true"><path d="M4 4l18 6M2 13h22M4 22l18-6" stroke="#f3b23c" stroke-width="3.5" stroke-linecap="round" /></svg>Let's connect over…<svg class="dash" viewBox="0 0 30 24" aria-hidden="true"><path d="M26 4L8 10M28 13H6M26 22L8 16" stroke="#f3b23c" stroke-width="3.5" stroke-linecap="round" /></svg>
-        </h2>
-        <p class="picks-sub">Tap whatever sounds fun. One or all of them, and you can change your mind later.</p>
-
-        <div class="cards" role="group" aria-label="Activities">
-          <button class="card" type="button" data-pick="coffee" aria-pressed="false">
-            <svg class="stamp" viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="19" fill="#f3b23c" stroke="#1f2b4d" stroke-width="2" stroke-dasharray="3 3"/><path d="M12 22l6 6 12-13" fill="none" stroke="#1f2b4d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <svg class="ico" viewBox="0 0 74 64" aria-hidden="true">
-              <path d="M16 26h34v10a17 17 0 0 1-34 0z" />
-              <path d="M50 29c9 0 10 4 10 7s-2 7-10 7" />
-              <path d="M10 57h46" />
-              <path d="M26 19q-4-5 0-9M33 19q-4-5 0-9M40 19q-4-5 0-9" />
-            </svg>
-            <h3>Coffee chats &amp; group lunches</h3>
-            <span class="when">Conference week</span>
-            <p>Unhurried conversations about research, ideas, and everything in between.</p>
-            <span class="toggle"><span class="off">+ I'm in</span><span class="on">✓ I'm in</span></span>
-          </button>
-
-          <button class="card" type="button" data-pick="sunset" aria-pressed="false">
-            <svg class="stamp" viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="19" fill="#f3b23c" stroke="#1f2b4d" stroke-width="2" stroke-dasharray="3 3"/><path d="M12 22l6 6 12-13" fill="none" stroke="#1f2b4d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <svg class="ico" viewBox="0 0 74 64" aria-hidden="true">
-              <path class="fill-sun" d="M30 44a14 14 0 0 1 28 0z" />
-              <path d="M44 22v-6M30 28l-4-4M58 28l4-4M24 38h-5M64 38h5" />
-              <path d="M4 56q14-14 30-8t36 4" />
-              <path d="M10 58q10-8 20-12" stroke-dasharray="1 5" />
-            </svg>
-            <h3>Sunset walk to Observatory Hill</h3>
-            <span class="when star">6 or 12 Dec · evening</span>
-            <p>Wander up together and watch the harbour turn gold behind the bridge.</p>
-            <span class="toggle"><span class="off">+ I'm in</span><span class="on">✓ I'm in</span></span>
-          </button>
-
-          <button class="card" type="button" data-pick="bondi" aria-pressed="false">
-            <svg class="stamp" viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="19" fill="#f3b23c" stroke="#1f2b4d" stroke-width="2" stroke-dasharray="3 3"/><path d="M12 22l6 6 12-13" fill="none" stroke="#1f2b4d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <svg class="ico" viewBox="0 0 74 64" aria-hidden="true">
-              <circle class="fill-sun" cx="58" cy="16" r="7" />
-              <path class="fill-sea" d="M6 54c4-26 30-38 48-24-10-4-20 2-18 12 2 8 12 10 20 6-4 8-14 10-22 8z" />
-              <path d="M4 58c8-4 14 4 22 0s14 4 22 0 14 4 22 0" />
-            </svg>
-            <h3>Sunrise at Bondi Beach</h3>
-            <span class="when">Dawn · 6 or 12 Dec</span>
-            <p>For early risers and beach lovers. Coffee afterwards, obviously.</p>
-            <span class="toggle"><span class="off">+ I'm in</span><span class="on">✓ I'm in</span></span>
-          </button>
-
-          <button class="card" type="button" data-pick="dec13" aria-pressed="false">
-            <svg class="stamp" viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="19" fill="#f3b23c" stroke="#1f2b4d" stroke-width="2" stroke-dasharray="3 3"/><path d="M12 22l6 6 12-13" fill="none" stroke="#1f2b4d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <svg class="ico" viewBox="0 0 74 64" aria-hidden="true">
-              <path d="M10 22L37 8l27 14z" />
-              <path d="M12 26h50M18 30v20M30 30v20M44 30v20M56 30v20M8 55h58" />
-              <path d="M66 50c-6-2-8-10-2-16 4 6 4 12 2 16zM66 50v8" />
-            </svg>
-            <h3>Sunday 13 Dec, after it's over</h3>
-            <span class="when">Post-conference</span>
-            <p>A museum, a stroll through the Botanic Garden, or a slow beach walk.</p>
-            <span class="toggle"><span class="off">+ I'm in</span><span class="on">✓ I'm in</span></span>
-          </button>
-
-          <button class="card" type="button" data-pick="one2one" aria-pressed="false">
-            <svg class="stamp" viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="19" fill="#f3b23c" stroke="#1f2b4d" stroke-width="2" stroke-dasharray="3 3"/><path d="M12 22l6 6 12-13" fill="none" stroke="#1f2b4d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <svg class="ico" viewBox="0 0 74 64" aria-hidden="true">
-              <path d="M8 10h28a6 6 0 0 1 6 6v10a6 6 0 0 1-6 6H20l-8 7v-7H8a6 6 0 0 1-6-6V16a6 6 0 0 1 6-6z" />
-              <path class="fill-sun" d="M38 26h26a6 6 0 0 1 6 6v10a6 6 0 0 1-6 6h-2v7l-8-7H38a6 6 0 0 1-6-6V32a6 6 0 0 1 6-6z" style="stroke: #1f2b4d" />
-              <path d="M12 21h18M42 37h18" />
-            </svg>
-            <h3>A 1:1 chat</h3>
-            <span class="when">Whenever suits</span>
-            <p>Rather talk one-on-one? A quiet coffee, just the two of us.</p>
-            <span class="toggle"><span class="off">+ I'm in</span><span class="on">✓ I'm in</span></span>
-          </button>
-        </div>
-        <p class="cards-foot">Nothing's booked yet. Tell us when you're free, and we'll pick the times that work for most people.</p>
           </div>
         </div>
       </section>
@@ -409,6 +333,84 @@ contact_email: traviku2@asu.edu
         <path d="M0 40C180 10 330 10 520 34S900 66 1080 38 1340 12 1440 28V70H0Z" fill="#fff8ee" />
       </svg>
 
+      <section id="connect" aria-labelledby="connect-title">
+        <div class="wrap">
+          <h2 class="sec-title" id="connect-title">
+            <svg class="dash" viewBox="0 0 30 24" aria-hidden="true"><path d="M4 4l18 6M2 13h22M4 22l18-6" stroke="#f3b23c" stroke-width="3.5" stroke-linecap="round" /></svg>Let's connect over…<svg class="dash" viewBox="0 0 30 24" aria-hidden="true"><path d="M26 4L8 10M28 13H6M26 22L8 16" stroke="#f3b23c" stroke-width="3.5" stroke-linecap="round" /></svg>
+          </h2>
+          <p class="sec-sub">Tap whatever sounds fun. One or all of them, and you can change your mind later.</p>
+
+          <div class="cards" role="group" aria-label="Activities">
+            <button class="card" type="button" data-pick="coffee" aria-pressed="false">
+              <svg class="stamp" viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="19" fill="#f3b23c" stroke="#1f2b4d" stroke-width="2" stroke-dasharray="3 3"/><path d="M12 22l6 6 12-13" fill="none" stroke="#1f2b4d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg class="ico" viewBox="0 0 74 64" aria-hidden="true">
+                <path d="M16 26h34v10a17 17 0 0 1-34 0z" />
+                <path d="M50 29c9 0 10 4 10 7s-2 7-10 7" />
+                <path d="M10 57h46" />
+                <path d="M26 19q-4-5 0-9M33 19q-4-5 0-9M40 19q-4-5 0-9" />
+              </svg>
+              <h3>Coffee chats &amp; group lunches</h3>
+              <span class="when">Conference week</span>
+              <p>Unhurried conversations about research, ideas, and everything in between.</p>
+              <span class="toggle"><span class="off">+ I'm in</span><span class="on">✓ I'm in</span></span>
+            </button>
+
+            <button class="card" type="button" data-pick="sunset" aria-pressed="false">
+              <svg class="stamp" viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="19" fill="#f3b23c" stroke="#1f2b4d" stroke-width="2" stroke-dasharray="3 3"/><path d="M12 22l6 6 12-13" fill="none" stroke="#1f2b4d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg class="ico" viewBox="0 0 74 64" aria-hidden="true">
+                <path class="fill-sun" d="M30 44a14 14 0 0 1 28 0z" />
+                <path d="M44 22v-6M30 28l-4-4M58 28l4-4M24 38h-5M64 38h5" />
+                <path d="M4 56q14-14 30-8t36 4" />
+                <path d="M10 58q10-8 20-12" stroke-dasharray="1 5" />
+              </svg>
+              <h3>Sunset walk to Observatory Hill</h3>
+              <span class="when star">6 or 12 Dec · evening</span>
+              <p>Wander up together and watch the harbour turn gold behind the bridge.</p>
+              <span class="toggle"><span class="off">+ I'm in</span><span class="on">✓ I'm in</span></span>
+            </button>
+
+            <button class="card" type="button" data-pick="bondi" aria-pressed="false">
+              <svg class="stamp" viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="19" fill="#f3b23c" stroke="#1f2b4d" stroke-width="2" stroke-dasharray="3 3"/><path d="M12 22l6 6 12-13" fill="none" stroke="#1f2b4d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg class="ico" viewBox="0 0 74 64" aria-hidden="true">
+                <circle class="fill-sun" cx="58" cy="16" r="7" />
+                <path class="fill-sea" d="M6 54c4-26 30-38 48-24-10-4-20 2-18 12 2 8 12 10 20 6-4 8-14 10-22 8z" />
+                <path d="M4 58c8-4 14 4 22 0s14 4 22 0 14 4 22 0" />
+              </svg>
+              <h3>Sunrise at Bondi Beach</h3>
+              <span class="when">Dawn · 6 or 12 Dec</span>
+              <p>For early risers and beach lovers. Coffee afterwards, obviously.</p>
+              <span class="toggle"><span class="off">+ I'm in</span><span class="on">✓ I'm in</span></span>
+            </button>
+
+            <button class="card" type="button" data-pick="dec13" aria-pressed="false">
+              <svg class="stamp" viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="19" fill="#f3b23c" stroke="#1f2b4d" stroke-width="2" stroke-dasharray="3 3"/><path d="M12 22l6 6 12-13" fill="none" stroke="#1f2b4d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg class="ico" viewBox="0 0 74 64" aria-hidden="true">
+                <path d="M10 22L37 8l27 14z" />
+                <path d="M12 26h50M18 30v20M30 30v20M44 30v20M56 30v20M8 55h58" />
+                <path d="M66 50c-6-2-8-10-2-16 4 6 4 12 2 16zM66 50v8" />
+              </svg>
+              <h3>Sunday 13 Dec, after it's over</h3>
+              <span class="when">Post-conference</span>
+              <p>A museum, a stroll through the Botanic Garden, or a slow beach walk.</p>
+              <span class="toggle"><span class="off">+ I'm in</span><span class="on">✓ I'm in</span></span>
+            </button>
+
+            <button class="card" type="button" data-pick="one2one" aria-pressed="false">
+              <svg class="stamp" viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="19" fill="#f3b23c" stroke="#1f2b4d" stroke-width="2" stroke-dasharray="3 3"/><path d="M12 22l6 6 12-13" fill="none" stroke="#1f2b4d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg class="ico" viewBox="0 0 74 64" aria-hidden="true">
+                <path d="M8 10h28a6 6 0 0 1 6 6v10a6 6 0 0 1-6 6H20l-8 7v-7H8a6 6 0 0 1-6-6V16a6 6 0 0 1 6-6z" />
+                <path class="fill-sun" d="M38 26h26a6 6 0 0 1 6 6v10a6 6 0 0 1-6 6h-2v7l-8-7H38a6 6 0 0 1-6-6V32a6 6 0 0 1 6-6z" style="stroke: #1f2b4d" />
+                <path d="M12 21h18M42 37h18" />
+              </svg>
+              <h3>A 1:1 chat</h3>
+              <span class="when">Whenever suits</span>
+              <p>Rather talk one-on-one? A quiet coffee, just the two of us.</p>
+              <span class="toggle"><span class="off">+ I'm in</span><span class="on">✓ I'm in</span></span>
+            </button>
+          </div>
+          <p class="cards-foot">Nothing's booked yet. Tell us when you're free, and we'll pick the times that work for most people.</p>
+        </div>
+      </section>
 
       <section id="welcome" aria-labelledby="welcome-title">
         <div class="wrap welcome">
@@ -609,6 +611,6 @@ contact_email: traviku2@asu.edu
       <a class="btn" href="#count-me-in">Say hi →</a>
     </div>
 
-    <script src="{{ '/assets/neurips/sydney.js' | relative_url }}?v=3" defer></script>
+    <script src="{{ '/assets/neurips/sydney.js' | relative_url }}?v=2" defer></script>
   </body>
 </html>
