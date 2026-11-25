@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">
+  <!-- flat Highland coo: horns, ginger shag, fringe over the eyes -->
+  <path d="M14 22c-6 0-10-4-11-9 3 3 7 4 12 3z" fill="#efe3c8"/>
+  <path d="M50 22c6 0 10-4 11-9-3 3-7 4-12 3z" fill="#efe3c8"/>
+  <path d="M9 27c-2 2-2 6 1 7 3 1 5-1 6-3z" fill="#b5652a"/>
+  <path d="M55 27c2 2 2 6-1 7-3 1-5-1-6-3z" fill="#b5652a"/>
+  <path d="M16 20c4-6 28-6 32 0 3 5 3 14 1 22-2 9-8 16-17 16S17 51 15 42c-2-8-2-17 1-22z" fill="#c9762f"/>
+  <path d="M23 46c2-2 16-2 18 0 2 3 1 9-3 11-3 2-9 2-12 0-4-2-5-8-3-11z" fill="#e8b48a"/>
+  <circle cx="28" cy="52" r="1.6" fill="#7a3d1c"/>
+  <circle cx="36" cy="52" r="1.6" fill="#7a3d1c"/>
+  <path d="M15 22c3-7 31-7 34 0l-2 13-3-5-3 7-3-6-3 7-3-7-3 6-3-7-3 5z" fill="#e0913f"/>
+  <path d="M22 18l-2 8M28 16l-1 9M34 16l1 9M41 18l2 8" stroke="#a85a23" stroke-width="1.6" stroke-linecap="round"/>
+</svg>

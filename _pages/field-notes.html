@@ -9,7 +9,7 @@ nav_order: 4
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ '/assets/field-notes/field-notes.css' | relative_url }}?v=8">
+<link rel="stylesheet" href="{{ '/assets/field-notes/field-notes.css' | relative_url }}?v=9">
 
 {% assign fn = site.data.field_notes %}
 {% assign notes = site.field_notes | sort: 'date' | reverse %}
@@ -154,16 +154,36 @@ nav_order: 4
         {% endfor %}
       </ol>
 
-      <h4 class="carrying">Questions I'm carrying</h4>
+      <h4 class="carrying">Questions I'm carrying <span class="fn-hand">tap one</span></h4>
       {% assign letters = 'A,B,C,D,E,F,G,H' | split: ',' %}
-      <div class="threads">
+      <div class="q-tabs" role="tablist">
         {% for th in fn.bigger_questions.threads %}
-          <div class="thread">
-            <b><i>{{ letters[forloop.index0] }}</i>{{ th.name }}</b>
-            <ul>{% for q in th.questions %}<li>{{ q }}</li>{% endfor %}</ul>
-          </div>
+          <button type="button" class="q-tab" role="tab" aria-selected="false" aria-controls="qp-{{ forloop.index }}" id="qt-{{ forloop.index }}"><i>{{ letters[forloop.index0] }}</i>{{ th.name }}</button>
         {% endfor %}
       </div>
+      {% for th in fn.bigger_questions.threads %}
+        <div class="q-panel" role="tabpanel" id="qp-{{ forloop.index }}" aria-labelledby="qt-{{ forloop.index }}" hidden>
+          <ul>{% for q in th.questions %}<li>{{ q }}</li>{% endfor %}</ul>
+        </div>
+      {% endfor %}
+      <script>
+        (function () {
+          var tabs = document.querySelectorAll(".q-tab");
+          tabs.forEach(function (t) {
+            t.addEventListener("click", function () {
+              var open = t.getAttribute("aria-selected") === "true";
+              tabs.forEach(function (o) {
+                o.setAttribute("aria-selected", "false");
+                document.getElementById(o.getAttribute("aria-controls")).hidden = true;
+              });
+              if (!open) {
+                t.setAttribute("aria-selected", "true");
+                document.getElementById(t.getAttribute("aria-controls")).hidden = false;
+              }
+            });
+          });
+        })();
+      </script>
     </div>
   </section>
 
@@ -197,10 +217,6 @@ nav_order: 4
         {% endfor %}
       </div>
       <div>
-        <h4>On the nightstand</h4>
-        <ul>
-          {% for b in fn.remember.books %}<li><em>{{ b.title }}</em> <i>· {{ b.by }}</i></li>{% endfor %}
-        </ul>
         <h4>Questions without answers</h4>
         <ul class="q">
           {% for q in fn.remember.questions %}<li>{{ q }}</li>{% endfor %}
@@ -208,4 +224,10 @@ nav_order: 4
       </div>
     </div>
   </section>
+
+  <!-- a small sign-off -->
+  <aside class="fn-coo">
+    <img src="{{ '/assets/field-notes/coo.svg' | relative_url }}" alt="" width="44" height="44">
+    <p><b>P.S. My favourite animal is the hairy coo.</b> I met one on the Isle of Skye. It ran straight towards me, and I fell in love on the spot. How could you not?</p>
+  </aside>
 </div>
