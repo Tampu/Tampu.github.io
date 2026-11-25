@@ -14,6 +14,9 @@ sections:
   - id: midnight-thoughts
     name: Midnight thoughts
     blurb: Questions, observations and random thoughts.
+  - id: bigger-questions
+    name: The bigger questions
+    blurb: The universe, evolution, intelligence, and what we can know.
   - id: rabbit-hole
     name: Down the rabbit hole
     blurb: Research papers, unexpected connections and ideas.
@@ -77,3 +80,35 @@ remember:
     - "Can a machine reason about a world it never had to describe?"
     - "If it can, how would we know what it was thinking?"
     - "Is a picture a thought, or just the memory of one?"
+
+# The bigger questions: open threads, not research topics.
+# Status words to use on entries: Exploring, Reading, Revisiting, Still wondering, Changed my mind
+bigger_questions:
+  principle:
+    - Not everything needs an answer.
+    - Not every question needs to become research.
+    - Not every thought needs to lead somewhere.
+  threads:
+    - name: The universe and our place in it
+      questions:
+        - Why is there something rather than nothing?
+        - Is the universe fundamentally understandable to us?
+        - Are mathematics and physics discoveries about reality, or frameworks we use to describe it?
+        - Does understanding the cosmos make a single life feel smaller, or more meaningful?
+    - name: Evolution, beyond biology
+      questions:
+        - Is evolution directional, or does it only look that way to us?
+        - Are biological, cultural and technological evolution connected?
+        - What would it mean for consciousness to evolve?
+    - name: AI and the future of being human
+      questions:
+        - Does AI extend human intelligence, or substitute for it?
+        - If we outsource memory and reasoning, do we slowly lose them?
+        - Is intelligence the same thing as wisdom?
+        - What should we keep learning for ourselves?
+    - name: What can we actually know?
+      questions:
+        - Are there truths humans are not built to understand?
+        - Is scientific knowledge an approximation of reality?
+        - Can consciousness understand itself completely?
+        - Is uncertainty a limit of intelligence, or a feature of reality?

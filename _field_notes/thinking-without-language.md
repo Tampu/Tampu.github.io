@@ -6,6 +6,7 @@ date: 2026-10-16
 standfirst: A question about human cognition, and an unexpected journey into multimodal intelligence.
 excerpt: A question about human cognition, and an unexpected journey into multimodal intelligence.
 tags: [Human cognition, Multimodal AI, World models]
+status: Still wondering
 # The trail shown under "Down the rabbit hole" on the Field Notes page.
 rabbit_hole:
   - step: Non-linguistic cognition
