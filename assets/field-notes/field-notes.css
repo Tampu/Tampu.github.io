@@ -1383,3 +1383,30 @@ footer a {
     min-width: 130px;
   }
 }
+/* uniform frames so the two rows line up */
+.fn-lens.lens-strip {
+  grid-auto-columns: 210px;
+}
+.lens-strip .fn-print.film {
+  width: 210px;
+}
+.lens-strip .fn-print.film img {
+  width: 100%;
+  height: 250px;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+.lens-strip .fn-print figcaption {
+  min-width: 0;
+}
+@media (max-width: 760px) {
+  .fn-lens.lens-strip {
+    grid-auto-columns: 160px;
+  }
+  .lens-strip .fn-print.film {
+    width: 160px;
+  }
+  .lens-strip .fn-print.film img {
+    height: 190px;
+  }
+}
