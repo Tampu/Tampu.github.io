@@ -1516,3 +1516,54 @@ footer a {
     animation: none;
   }
 }
+
+/* through my lens: endless roll, story under each frame */
+.lens-roll {
+  margin-top: 0.5rem;
+}
+.lens-roll .track {
+  align-items: flex-start;
+  gap: 14px;
+  animation-duration: 220s;
+}
+.lens-roll .fn-print.film {
+  position: relative;
+  display: grid;
+  grid-template-columns: min-content;
+  background: #151413;
+  padding: 18px 10px 12px;
+  border-radius: 2px;
+}
+.lens-roll .fn-print.film::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  right: 10px;
+  height: 5px;
+  background: repeating-linear-gradient(90deg, #050505 0 8px, transparent 8px 15px);
+}
+.lens-roll .fn-print.film img {
+  height: 280px;
+  width: auto;
+  max-width: none;
+  aspect-ratio: auto;
+}
+.lens-roll figcaption {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color: var(--muted);
+  padding-top: 0.6rem;
+  min-width: 150px;
+}
+.lens-roll figcaption b {
+  color: var(--amber);
+  font-weight: 500;
+}
+@media (max-width: 760px) {
+  .lens-roll .fn-print.film img {
+    height: 200px;
+  }
+}
