@@ -8,8 +8,8 @@ nav_order: 4
 ---
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ '/assets/field-notes/field-notes.css' | relative_url }}?v=4">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/field-notes/field-notes.css' | relative_url }}?v=5">
 
 {% assign fn = site.data.field_notes %}
 {% assign notes = site.field_notes | sort: 'date' | reverse %}
@@ -86,7 +86,8 @@ nav_order: 4
     <div class="fn-sec-head"><span class="no">02</span><h2>Through my lens</h2><span class="fn-hand">no filters, mostly</span></div>
     <div class="fn-lens">
       {% for p in fn.lens %}
-        <figure class="fn-print{% cycle '', ' taped', '' %}" style="--ar: {{ p.ratio | default: '4 / 3' }}">
+        <figure class="fn-print film" style="--ar: {{ p.ratio | default: '4 / 3' }}">
+          <span class="frame-no">{{ forloop.index | prepend: '0' | slice: -2, 2 }}A</span>
           {% if p.file != '' %}
             <img src="{{ p.file | prepend: '/assets/field-notes/lens/' | relative_url }}" alt="{{ p.caption | default: p.place }}" loading="lazy">
           {% else %}
