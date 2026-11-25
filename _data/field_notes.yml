@@ -196,3 +196,85 @@ bigger_questions:
         - Is scientific knowledge an approximation of reality?
         - Can consciousness understand itself completely?
         - Is uncertainty a limit of intelligence, or a feature of reality?
+
+interludes:
+  west:
+    label: "Yosemite · Big Sur · San Francisco · San Diego"
+    photos:
+      - file: west-43.jpg
+        caption: "Half Dome"
+      - file: west-79.jpg
+        caption: "Yosemite Falls"
+      - file: west-65.jpg
+        caption: "Nevada and Vernal Falls"
+      - file: west-66.jpg
+        caption: "Vernal Fall"
+      - file: west-67.jpg
+        caption: "Wildflowers by the river"
+      - file: west-68.jpg
+        caption: "The Mist Trail"
+      - file: west-80.jpg
+        caption: "Tent cabins after dark"
+      - file: west-76.jpg
+        caption: "McWay Falls, Big Sur"
+      - file: west-70.jpg
+        caption: "Bixby Bridge, Big Sur"
+      - file: west-69.jpg
+        caption: "Sunset, Big Sur"
+      - file: west-78.jpg
+        caption: "A cairn on the beach"
+      - file: west-71.jpg
+        caption: "Golden Gate in the fog"
+      - file: west-72.jpg
+        caption: "Walking the Golden Gate"
+      - file: west-73.jpg
+        caption: "A San Francisco hill"
+      - file: west-74.jpg
+        caption: "Sister cities, Bangalore included"
+      - file: west-46.jpg
+        caption: "Skimboarding at sunset"
+      - file: west-75.jpg
+        caption: "The sun going under"
+      - file: west-51.jpg
+        caption: "A gull at sunset"
+      - file: west-47.jpg
+        caption: "Flamingos"
+      - file: west-48.jpg
+        caption: "Reef tank"
+      - file: west-49.jpg
+        caption: "Kelp forest"
+      - file: west-50.jpg
+        caption: "Jellyfish"
+  home:
+    label: "Arizona · New York · Bengaluru"
+    photos:
+      - file: home-44.jpg
+        caption: "A squirrel who wanted my snack"
+      - file: home-45.jpg
+        caption: "From Camelback"
+      - file: home-52.jpg
+        caption: "Phoenix from above"
+      - file: home-53.jpg
+        caption: "Saguaros at dusk"
+      - file: home-54.jpg
+        caption: "Headlamps on the way down"
+      - file: home-55.jpg
+        caption: "Watching the sky catch fire"
+      - file: home-62.jpg
+        caption: "Feet up, city below"
+      - file: home-56.jpg
+        caption: "Palm walk under the moon"
+      - file: home-83.jpg
+        caption: "Bell Rock, Sedona"
+      - file: home-58.jpg
+        caption: "Grand Canyon, last light"
+      - file: home-81.jpg
+        caption: "Chairlift, Arizona Snowbowl"
+      - file: home-82.jpg
+        caption: "Snow in Arizona, really"
+      - file: home-60.jpg
+        caption: "Lower Manhattan from the water"
+      - file: home-61.jpg
+        caption: "Brooklyn Bridge"
+      - file: home-57.jpg
+        caption: "Bengaluru airport, Terminal 2"
