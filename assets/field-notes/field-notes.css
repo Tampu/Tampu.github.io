@@ -1027,9 +1027,11 @@ footer a {
   font-size: clamp(3.4rem, 9vw, 6.2rem);
   letter-spacing: -0.03em;
 }
+.fn-head h1 {
+  white-space: nowrap;
+}
 .fn-head h1 em {
   color: var(--gold);
-  display: inline-block;
   animation: fn-safelight 4s ease-in-out infinite;
 }
 @keyframes fn-safelight {
