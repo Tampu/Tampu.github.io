@@ -1105,7 +1105,7 @@ footer a {
 
 /* ---------- responsive ---------- */
 @media (max-width: 860px) {
-  .topnav a:not(.cta) {
+  .topnav a:not(.cta):not(.whoami-link) {
     display: none;
   }
   .hero {
@@ -1238,4 +1238,18 @@ footer a {
   font-size: 14px;
   color: var(--ink-soft);
   margin-top: 8px !important;
+}
+@media (max-width: 860px) {
+  .topnav {
+    gap: 16px;
+  }
+  .brand {
+    font-size: 13px;
+  }
+}
+@media (max-width: 380px) {
+  .brand span,
+  .brand {
+    white-space: nowrap;
+  }
 }
