@@ -1265,3 +1265,8 @@ footer a {
     width: 36px;
   }
 }
+@media (max-width: 480px) {
+  .brand-text {
+    display: none;
+  }
+}
