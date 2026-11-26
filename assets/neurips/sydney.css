@@ -1213,3 +1213,29 @@ footer a {
     scroll-behavior: auto;
   }
 }
+
+/* WhatsApp group links */
+.btn.ghost {
+  background: rgba(255, 253, 248, 0.85);
+  box-shadow: 0 10px 24px -16px rgba(60, 40, 10, 0.6);
+  border: 2px solid #25a35a;
+  color: #146c3b;
+}
+.btn.ghost svg,
+.btn.wa svg {
+  width: 20px;
+  height: 20px;
+}
+.btn.wa {
+  background: #25d366;
+  color: #0b3d22;
+  box-shadow:
+    0 2px 0 #1a9e4b,
+    0 12px 24px -12px rgba(10, 90, 40, 0.6);
+  margin-top: 14px;
+}
+.wa-note {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin-top: 8px !important;
+}
