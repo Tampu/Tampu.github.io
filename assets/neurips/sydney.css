@@ -1253,3 +1253,15 @@ footer a {
     white-space: nowrap;
   }
 }
+.topnav a {
+  white-space: nowrap;
+}
+@media (max-width: 420px) {
+  .topnav {
+    gap: 12px;
+    font-size: 14px;
+  }
+  .brand svg {
+    width: 36px;
+  }
+}
